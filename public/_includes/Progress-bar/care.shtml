@@ -1,0 +1,33 @@
+
+    <ol>
+        <li class="complete">
+            <span>Eligibility</span>
+        </li>
+        <li class="complete">
+            <span>About you</span>
+        </li>
+        <li class="complete">
+            <span>Partner/Spouse</span>
+        </li>
+        <li class="active">
+            <span>Care</span>
+        </li>
+        <li>
+            <span>Time Abroad</span>
+        </li>
+        <li>
+            <span>Education</span>
+        </li>
+        <li>
+            <span>Employment</span>
+        </li>
+        <li>
+            <span>Other money</span>
+        </li>
+        <li>
+            <span>Pay details</span>
+        </li>
+        <li>
+            <span>Declaration</span>
+        </li>
+    </ol>
