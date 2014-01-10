@@ -4,7 +4,7 @@ input,
 select,
 textarea {
   color: #0B0C0C;
-  font-family: 'nta'; }
+  font-family: 'nta',Arial,sans-serif; }
 
 html {
   font-size: .62em;
