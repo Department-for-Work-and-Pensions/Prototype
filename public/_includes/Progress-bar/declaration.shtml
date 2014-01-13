@@ -1,0 +1,30 @@
+
+    <ol>
+        <li class="complete">
+            <span><a href="/1eligibility/q1.html">Eligibility</a></span>
+        </li>
+        <li>
+            <span><a href="/2About/about1.html">About you</a></span>
+        </li>
+        <li>
+            <span><a href="#">Partner/Spouse</a></span>
+        </li>
+        <li>
+            <span><a href="#">Care</a></span>
+        </li>
+        <li>
+            <span><a href="#">Education</a></span>
+        </li>
+        <li>
+            <span><a href="#">Employment</a></span>
+        </li>
+        <li>
+            <span><a href="#">Other money</a></span>
+        </li>
+        <li>
+            <span><a href="#">Pay details</a></span>
+        </li>
+        <li class="active">
+            <span>Declaration</span>
+        </li>
+    </ol>
