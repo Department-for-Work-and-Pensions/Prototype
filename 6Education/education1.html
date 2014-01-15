@@ -10,7 +10,7 @@
             <h1>About your education</h1>
             <form action="" method="">
                 <fieldset class="form-elements">
-                    <legend>What type of course are you studying?</legend>
+                    <legend>Course details</legend>
                     <ul>
                         <li >
                             <label for="">Course title</label>
@@ -20,29 +20,24 @@
                             <label for="">Name of school, college or university</label>
                             <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
                         </li>
-                        <li><p><a  href="javascript:void(0)" id="select-start" style="font-size:16px; font-size:1.6rem;">Show optional questions (answering these could speed up your claim)</a></p>
-                        </li>
-                        <li>
-                            <ul class="hideShowStart" style="display:none;">
+
                                 <li >
                                     <label for="">Name of main teacher or tutor </label>
                                     <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
                                 </li>
-                                <li >
-                                    <label for="">Course contact number</label>
-                                    <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
-                                </li>
-                                <!--
                                 <li>
-                                    <label for="">Your student reference number </label>
+                                    <label for="">Course contact number (optional)</label>
                                     <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
+                                    <p class="helper">Please include if you know the phone number for your department</p>
                                 </li>
-                                -->
+       
                                 <li>
                                     <p>When did you start the course?</p>
                                     <ul class="inline year">
                                         <li>
                                             <label for="day">Day</label>
+                                            <input type="text" name="day" id="day" maxlength="8" placeholder="DD">
+                                            <!--
                                             <select name="day" id="day">
                                                 <option value="Day">Day</option>
                                                 <option value="#">1</option>
@@ -76,11 +71,11 @@
                                                 <option value="#">29</option>
                                                 <option value="#">30</option>
                                                 <option value="#">31</option>
-                                            </select>
+                                            </select>-->
                                         </li>
                                         <li>
                                             <label for="month">Month</label>
-                                            <select name="month" id="month">
+                                            <!--<select name="month" id="month">
                                                 <option value="#">Month</option>
                                                 <option value="#">January</option>
                                                 <option value="#">February</option>
@@ -94,21 +89,23 @@
                                                 <option value="#">October</option>
                                                 <option value="#">November</option>
                                                 <option value="#">December</option>
-                                            </select>
+                                            </select>-->
+                                            <input type="text" name="month" id="month" maxlength="8" placeholder="MM">
                                         </li>
                                         <li>
                                             <label for="year">Year</label>
                                             <input type="tel" name="year" id="year" maxlength="4" placeholder="YYYY">
                                         </li>
                                     </ul>
-                                    <p class="helper">eg: 27 June 2013</p>
+                                    <p class="helper">eg: September 2013</p>
                                 </li>
                                 <li>
-                                    <p>When did the course end <i>or</i> when will you finish?</p>
+                                    <p>When did the course end or when will you finish?</p>
                                     <ul class="inline year">
                                         <li>
                                             <label for="day">Day</label>
-                                            <select name="day" id="day">
+                                            <input type="text" name="day" id="day" maxlength="8" placeholder="DD">
+                                            <!--<select name="day" id="day">
                                                 <option value="#">Day</option>
                                                 <option value="#">1</option>
                                                 <option value="#">2</option>
@@ -141,11 +138,11 @@
                                                 <option value="#">29</option>
                                                 <option value="#">30</option>
                                                 <option value="#">31</option>
-                                            </select>
+                                            </select>-->
                                         </li>
                                         <li>
                                             <label for="month">Month</label>
-                                            <select name="month" id="month">
+                                            <!--<select name="month" id="month">
                                                 <option value="#">Month</option>
                                                 <option value="#">January</option>
                                                 <option value="#">February</option>
@@ -159,14 +156,16 @@
                                                 <option value="#">October</option>
                                                 <option value="#">November</option>
                                                 <option value="#">December</option>
-                                            </select>
-                                        </li>
-                                        <li>
+                                            </select>-->
+                                            <input type="text" name="month" id="month" maxlength="8" placeholder="MM">
+                                            </li>
+                                            <li>
                                             <label for="year">Year</label>
                                             <input type="tel" name="year" id="year" maxlength="4" placeholder="YYYY">
+                                            <p class="helper">eg: June 2014</p>
                                         </li>
-                                    </ul>
-                                </li>
+                               
+
                             </ul>
                         </li>
                     </ul>
