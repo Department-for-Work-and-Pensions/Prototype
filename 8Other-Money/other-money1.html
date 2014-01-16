@@ -1,3 +1,4 @@
+<!--#set var="title" value="(Other Money)" -->
 <!--#include virtual="../public/_includes/_global/header.shtml" -->  
 <main role="main" id="main">
 	<div class="carers-allowance">
@@ -10,7 +11,7 @@
 
         <h1>Other Money</h1>
         
-        <p class="security-message">We need to know about any other money received since the date you're claiming from: <strong style="text-decoration: none;">03 March 2013</strong>.</p>
+        <p class="security-message">We need to know about any other money received since the date you're claiming from: <strong style="text-decoration: none;">16 January 2014</strong>.</p>
 
  		<form action="/other-money/about-other-money" method="POST">
     
@@ -53,13 +54,13 @@
 
 <ul class="radio" id="2f6c8ce7db2a3b70f41b1793d3d40c230ba06c539c6c02f22bdaf591c0e8429a52857dc244a0fbf78a670ef4d69ff177">
         <li>
-            <input type="radio" id="2f6c8ce7db2a3b70f41b1793d3d40c230ba06c539c6c02f22bdaf591c0e8429a8f90a8ad773ef92ea419b0ed414cc212" name="2f6c8ce7db2a3b70f41b1793d3d40c2307a4ee33b41e858a9dc3fed8c03c6ecc52857dc244a0fbf78a670ef4d69ff177" onclick="" helperbelow="Enter all payments from organisations or individuals, eg from a local authority, payments for fostering, direct payments, adult placements.">
-            <label for="2f6c8ce7db2a3b70f41b1793d3d40c230ba06c539c6c02f22bdaf591c0e8429a8f90a8ad773ef92ea419b0ed414cc212">Yes</label>
+            <input type="radio" id="additional-yes" name="2f6c8ce7db2a3b70f41b1793d3d40c2307a4ee33b41e858a9dc3fed8c03c6ecc52857dc244a0fbf78a670ef4d69ff177" helperbelow="Enter all payments from organisations or individuals, eg from a local authority, payments for fostering, direct payments, adult placements.">
+            <label for="additional-yes">Yes</label>
         </li>
     
         <li>
-            <input type="radio" id="2f6c8ce7db2a3b70f41b1793d3d40c230ba06c539c6c02f22bdaf591c0e8429a54120ca6f0764ff8a7c1fbc832bd541e" name="2f6c8ce7db2a3b70f41b1793d3d40c2307a4ee33b41e858a9dc3fed8c03c6ecc52857dc244a0fbf78a670ef4d69ff177" onclick="" helperbelow="Enter all payments from organisations or individuals, eg from a local authority, payments for fostering, direct payments, adult placements.">
-            <label for="2f6c8ce7db2a3b70f41b1793d3d40c230ba06c539c6c02f22bdaf591c0e8429a54120ca6f0764ff8a7c1fbc832bd541e">No</label>
+            <input type="radio" id="additional-no" name="2f6c8ce7db2a3b70f41b1793d3d40c2307a4ee33b41e858a9dc3fed8c03c6ecc52857dc244a0fbf78a670ef4d69ff177"  helperbelow="Enter all payments from organisations or individuals, eg from a local authority, payments for fostering, direct payments, adult placements.">
+            <label for="additional-no">No</label>
         </li>
 
 </ul>
@@ -71,62 +72,35 @@
 </li>
 
     <li id="otherPayWrap" class="other-detail" style="display: none;">
+        
         <ul>
-
-<li>
-    
-
-<label for="6a95970fdb90faec2baa4cfa03c1c6f6">Who pays you?</label>
-
-    <input type="text" id="6a95970fdb90faec2baa4cfa03c1c6f6" name="6a95970fdb90faec2baa4cfa03c1c6f6" value="" maxlength="35" autocomplete="off">
-
-
-</li>
-
- <li class="currency"> 
-
-<label for="44334dfd18f1835122515c200ddd4486">How much?</label>
-
-        <input type="tel" id="44334dfd18f1835122515c200ddd4486" name="44334dfd18f1835122515c200ddd4486" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" title="The amount must be in the format 12 or 12.5 or 12.55" value="" placeholder="£" maxlength="60" autocomplete="off">
-    
-</li>
-
-<li>
-    
-
-<label for="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835">How often? <em>(optional)</em></label>
-
-    <select id="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835" name="fcadd9ffc1c3b935ea9ea939768ef4301ee8c1aee318bc06fadfea2d6caba835" visibleon="yes" display="no" selectwithother="true">
+			<li>
+				<label for="6a95970fdb90faec2baa4cfa03c1c6f6">Who pays you?</label>
+    			<input type="text" id="6a95970fdb90faec2baa4cfa03c1c6f6" name="6a95970fdb90faec2baa4cfa03c1c6f6" value="" maxlength="35" autocomplete="off">
+			</li>
+ 			<li class="currency"> 
+				<label for="44334dfd18f1835122515c200ddd4486">How much?</label>
+        		<input type="tel" id="44334dfd18f1835122515c200ddd4486" name="44334dfd18f1835122515c200ddd4486" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" title="The amount must be in the format 12 or 12.5 or 12.55" value="" placeholder="£" maxlength="60" autocomplete="off">
+			</li>
+			<li>
+				<label for="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835">How often? <em>(optional)</em></label>
+    			<select id="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835" name="fcadd9ffc1c3b935ea9ea939768ef4301ee8c1aee318bc06fadfea2d6caba835" visibleon="yes" display="no" selectwithother="true">
         
-            <option value="">Please select</option>
-        
-            <option value="weekly">Weekly</option>
-        
-            <option value="fortnightly">Fortnightly</option>
-        
-            <option value="fourWeekly">Four-weekly</option>
-        
-            <option value="monthly">Monthly</option>
-        
-            <option value="other">Other</option>
-        
-    </select>
+            		<option value="">Please select</option>
+            		<option value="weekly">Weekly</option>
+            		<option value="fortnightly">Fortnightly</option>
+            		<option value="fourWeekly">Four-weekly</option>
+            		<option value="monthly">Monthly</option>
+         		   <option value="other">Other</option>
+    			</select>
+   		 	</li>
+    		<!--<li id="howOften_wrap" class="other-detail" style="display: none;">
+				<label for="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25">How often? <em>(optional)</em></label>
+    			<textarea id="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25" name="fcadd9ffc1c3b935ea9ea939768ef430a50cab97c39b867fda7a4112bfc7f6f5" visibleon="yes" placeholder="If other please specify..." autocomplete="off" maxlength="60" display="no"></textarea>
 
-    </li>
-    
-    <li id="howOften_wrap" class="other-detail" style="display: none;">
-            
-
-
-<label for="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25">How often? <em>(optional)</em></label>
-
-    <textarea id="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25" name="fcadd9ffc1c3b935ea9ea939768ef430a50cab97c39b867fda7a4112bfc7f6f5" visibleon="yes" placeholder="If other please specify..." autocomplete="off" maxlength="60" display="no"></textarea>
-
-	<p class="helper right">60 characters left</p>
-            
-    </li>
-
-	</ul>
+				<p class="helper right">60 characters left</p>
+    		</li>-->
+		</ul>
     </li>
 
             </ul>

@@ -12,17 +12,17 @@
         <li>
             <span><a href="#">Care</a></span>
         </li>
+		<li>
+		    <span><a href="/6Education/education1.html">Education</a></span>
+		</li>
+		<li>
+		    <span><a href="/7Employment/">Employment</a></span>
+		</li>
+		<li>
+		    <span><a href="/8Other-Money/other-money1.html">Other money</a></span>
+		</li>
         <li>
-            <span><a href="#">Education</a></span>
-        </li>
-        <li>
-            <span><a href="#">Employment</a></span>
-        </li>
-        <li>
-            <span><a href="#">Other money</a></span>
-        </li>
-        <li>
-            <span><a href="#">Pay details</a></span>
+            <span><a href="/9PayDetails/paydetails1.html">Pay details</a></span>
         </li>
         <li class="active">
             <span>Declaration</span>
