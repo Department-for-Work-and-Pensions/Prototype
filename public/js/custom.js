@@ -82,6 +82,27 @@ $("#start-date, #end-date").datepicker({
     $('#additional-yes').click(function(){
     	$('.other-detail').show('medium');
     });
+    
+    
+    // Change of Circs Prototype
+
+    	$('#type-stopped-caring').click(function(){
+    		$('.details').hide('medium');
+        	$('.details.stopped-caring').show('medium');
+        });
+        $('#type-bank-details').click(function(){
+        	$('.details').hide('medium');
+        	$('.details.bank-details').show('medium');
+        });
+        $('#type-self-employment').click(function(){
+        	$('.details').hide('medium');
+        	$('.details.self-employment').show('medium');
+        });
+        $('#type-other').click(function(){
+        	$('.details').hide('medium');
+        	$('.details.other').show('medium');
+        });
+  
 
 	 
 	 
