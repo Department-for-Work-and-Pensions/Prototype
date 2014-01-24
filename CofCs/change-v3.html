@@ -90,7 +90,9 @@
 						</li>
 			    	</ul>
 			    </li>
-		    </ul>					
+		    </ul>	
+		    
+		    <div id="placeholder"></div>
 			        
 			</fieldset>
 			        
@@ -99,14 +101,14 @@
 			
 			<div class="form-steps">
 				<!--<a href="identification.html" class="button secondary">Back</a>-->
-				<a href="declaration-v2.html" class="button" id="continue">Continue</a>
+				<a href="declaration-v2.html" class="button">Continue</a>
 				<!--<a href="change.html" style="font-size: 16px; color: #999;">Continue and add another change</a>-->
 			</div>
 			<!-- / form steps -->
 	    </section>
 	</div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->  
 
 
 <script>
@@ -115,21 +117,21 @@ $(document).ready(function() {
 // Change of Circs Prototype
 
     	$('#type-stopped-caring').click(function(){
-    		$('#continue').attr('href','details-stopped-caring.html');
-    	});
+    		$('.details').hide();
+        	$("#placeholder").load("details-stopped-caring.html #details");
+        });
         $('#type-address').click(function(){
-        	$('#continue').attr('href','details-address.html');
+        	$("#placeholder").load("details-address.html #details");
         });
         $('#type-bank-details').click(function(){
-        	$('#continue').attr('href','details-bank-details.html');
+        	$("#placeholder").load("details-bank-details.html #details");
         });
         $('#type-self-employment').click(function(){
-        	$('#continue').attr('href','details-self-employment.html');
+        	$("#placeholder").load("details-self-employment.html #details");
         });
-        $('#type-other').click(function(){
-        	$('#continue').attr('href','details-other.html');
+        $('#type-other').click(function(){    	
+        	$("#placeholder").load("details-other.html #details");
         }); 
-        	
 }); 
 
 </script>
