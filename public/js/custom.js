@@ -87,20 +87,24 @@ $("#start-date, #end-date").datepicker({
     // Change of Circs Prototype
 
     	$('#type-stopped-caring').click(function(){
-    		$('.details').hide('medium');
-        	$('.details.stopped-caring').show('medium');
+    		$('.details').hide();
+        	$('.details.stopped-caring, .details.more').show('medium');
+        });
+        $('#type-address').click(function(){
+        	$('.details').hide();
+        	$('.details.address, .details.more').show('medium');
         });
         $('#type-bank-details').click(function(){
-        	$('.details').hide('medium');
-        	$('.details.bank-details').show('medium');
+        	$('.details').hide();
+        	$('.details.bank-details, .details.more').show('medium');
         });
         $('#type-self-employment').click(function(){
-        	$('.details').hide('medium');
-        	$('.details.self-employment').show('medium');
+        	$('.details').hide();
+        	$('.details.self-employment, .details.more').show('medium');
         });
         $('#type-other').click(function(){
-        	$('.details').hide('medium');
-        	$('.details.other').show('medium');
+        	$('.details').hide();
+        	$('.details.other, .details.more').show('medium');
         });
   
 

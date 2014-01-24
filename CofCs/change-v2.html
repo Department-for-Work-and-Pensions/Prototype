@@ -26,7 +26,7 @@
 	           	margin: 0 0 5px 0;
 	            padding: 0;
 	            position: relative;
-	           	width: 340px;
+	           	width: 370px;
 	        }
 	        
 	        .carers-allowance .form-elements ul.radio-block li input[type="radio"] {
@@ -70,19 +70,23 @@
 			    	<ul class="radio-block" id="type-of-change">
 			        	<li>
 			        		<input type="radio" value="type-stopped-caring" name="type-of-change" id="type-stopped-caring">
-			        		<label for="type-stopped-caring">I have stopped caring</label>
-			        	</li>			    
+			        		<label for="type-stopped-caring">I have permanently stopped caring</label>
+			        	</li>	
+			        	<li>
+			        		<input type="radio" value="type-address" name="type-of-change" id="type-address">
+			        		<label for="type-address">I want to change my address</label>
+			        	</li>		    
 						<li>
 							<input type="radio" value="type-bank-details" name="type-of-change" id="type-bank-details">
 							<label for="type-bank-details">I want to update payment/bank details</label>
 						</li>
 						<li>
 							<input type="radio" value="type-self-employment" name="type-of-change" id="type-self-employment">
-							<label for="type-self-employment">I have become self employed</label>
+							<label for="type-self-employment">I have started self employment</label>
 						</li>
 						<li>
 							<input type="radio" value="type-other" name="type-of-change" id="type-other">
-							<label for="type-other">Other</label>
+							<label for="type-other">Any other changes not listed above</label>
 						</li>
 			    	</ul>
 			    </li>
@@ -112,13 +116,54 @@
 			        <li>
 			        	<label for="aa31f76479c6c23b9facf1d853e6beac">Tell us more about this change <em>(optional)</em></label>
 			        	<textarea autocomplete="off" maxlength="2000" name="aa31f76479c6c23b9facf1d853e6beac" id="aa31f76479c6c23b9facf1d853e6beac"></textarea>
-			        	<p class="helper">eg: Contextual information help about this type of change.</p>
+			        	<!--<p class="helper">eg: Contextual information help about this type of change.</p>-->
 			        </li>
 			        
 			       </ul><!-- Details / Stopped Caring -->
 			       
 			       
+			       <ul class="details address" style="display:none;">
+			       
+			       <li>			       
+			       		<p>Are you still caring 35 hours or more each week?</p>
+			       		<ul class="radio" id="still-caring">
+			       			<li>
+			       				<input type="radio" value="still-caring-yes" name="still-caring" id="still-caring-yes">
+			       				<label for="still-caring-yes">Yes</label>
+			       			</li>			    
+			       			<li>
+			       				<input type="radio" value="still-caring-no" name="still-caring" id="still-caring-no">
+			       				<label for="still-caring-no">No</label>
+			       			</li>
+			       		</ul>
+			       
+			       </li>
+			     
+			       <li>
+				       <p>Address</p>
+				       						
+						<ul class="address-stack">
+							<li><label for="">address_lineOne <em>(optional)</em></label> <input autocomplete="off" id="" maxlength="60" name="" type="text" value=""></li>
+			
+							<li><label for="">address_lineTwo <em>(optional)</em></label> <input autocomplete="off" id="1569da368576accf2184c6178262df37" maxlength="60" name="" type="text" value=""></li>
+			
+							<li><label for="">address_lineThree <em>(optional)</em></label> <input autocomplete="off" id="" maxlength="60" name="" type="text" value=""></li>
+						</ul>
+				
+					</li>
+					
+					<li><label for="">Postcode</label> <input autocomplete="off" class="postcode" id="" maxlength="60" name="" type="text" value=""></li>
+			       
+			       			       
+			       </ul><!-- Details / Adresss -->
+			       
+			       
 			       <ul class="details bank-details" style="display:none;">
+			       
+			       <li>
+			       		<label for="account-holder">Name of account holder</label>
+			       		<input type="text" name="account-holder" id="account-holder">
+			       </li>	
 			      
 			       <li>
 			       		<label for="account-name">Whose name or names is the account in?</label>
@@ -132,8 +177,7 @@
 			                   <option value="">Other</option> <!-- << surely we need an other here? -->
 			       	    </select>
 			       </li> 
-			       </li>
-			       			       
+			       </li>   			       
 	
 				       <li>
 				       		<label for="bank-name">Full name of bank or building society</label>
@@ -142,12 +186,12 @@
 				       <li>
 				       		<label for="sort-code">Sort code</label>
 				       		<input type="text" name="sort-code" id="sort-code">
-				       		<p class="helper">eg: 20 20 20</p>
+				       		
 				       </li>
 				       <li>
 				       		<label for="sort-code">Account number</label>
 				       		<input type="text" name="sort-code" id="sort-code">
-				       		<p class="helper">eg: 2468101214</p>
+				       		
 				       </li>			       
 				       <li>
 		       				<label for="paid">How often do you want to be paid?</label>
@@ -166,7 +210,7 @@
 				       <li>
 				       	<label for="aa31f76479c6c23b9facf1d853e6beac">Tell us more about this change <em>(optional)</em></label>
 				       	<textarea autocomplete="off" maxlength="2000" name="aa31f76479c6c23b9facf1d853e6beac" id="aa31f76479c6c23b9facf1d853e6beac"></textarea>
-				       	<p class="helper">eg: Contextual information help about this type of change.</p>
+				       	<!--<p class="helper">eg: Contextual information help about this type of change.</p>-->
 				       </li>
 			       
 			       </ul>
@@ -189,7 +233,7 @@
 			       </li>
 			       
 			       <li>
-			       		<p>Date Business Started?</p>
+			       		<p>When did you start this self employed work?</p>
 		       			<ul class="inline year" id="">
 		       				<li><input autocomplete="off" id="" maxlength="2" name="" placeholder="DD" title="Day" type="tel" value=""></li>
 		       				<li><input autocomplete="off" id="" maxlength="2" name="" placeholder="MM" title="Month" type="tel" value=""></li>
@@ -203,11 +247,14 @@
 			       </li>
 			       
 			       <li>
-			       		<label for="type-of-business">Type of Business</label>
+			       		<label for="type-of-business">What type of business is your self employed work?</label>
 			       		<input type="text" name="type-of-business" id="type-of-business">
 			       </li>
 			       <li>
-			       		<p>Do you expect your total income to be more than £100 a week?</p>
+			       		<!--<p>Do you expect your total income to be more than £100 a week?</p>-->
+			       		
+			       		<p>Will the total income into your business be more than £100 a week?</p>
+			       		
 			       		<ul class="radio" id="total-income">
 			       			<li>
 			       				<input type="radio" value="total-income-yes" name="total-income" id="total-income-yes">
@@ -227,7 +274,7 @@
 					<li>
 						<label for="aa31f76479c6c23b9facf1d853e6beac">Tell us more about this change <em>(optional)</em></label>
 						<textarea autocomplete="off" maxlength="2000" name="aa31f76479c6c23b9facf1d853e6beac" id="aa31f76479c6c23b9facf1d853e6beac"></textarea>
-						<p class="helper">eg: Contextual information help about this type of change.</p>
+						<!--<p class="helper">eg: Contextual information help about this type of change.</p>-->
 					</li>
 			       
 			       </ul>
@@ -237,14 +284,14 @@
 			       <li>
 			       	<label for="aa31f76479c6c23b9facf1d853e6beac">Tell us about the change</label>
 			       	<textarea autocomplete="off" maxlength="2000" name="aa31f76479c6c23b9facf1d853e6beac" id="aa31f76479c6c23b9facf1d853e6beac"></textarea>
-			       	<p class="helper">Please include the date the change happened and any other relevant details.</p>
+			       	<p class="helper">Include the date the change happened and any other relevant details.</p>
 			       </li>
 			       
 			       </ul>
 
 
 			      
-			       <ul>
+			       <ul class="details more" style="display:none;">
 			        
 			            <li>			
 			            	<p>Do you have any other changes that you need to tell us about?</p>
