@@ -6,76 +6,69 @@
 		    <!--#include virtual="../public/_includes/_global/telephone.shtml" -->
 		    <!--#include virtual="../public/_includes/Progress-bar/about-you.shtml" -->
 		</div>
+		
 		<section>
-	        <h1>About you - the Carer</h1>
-	        
-	        <div class="completed">
-	        	<ul aria-label="Completed questions">
-	            	<li><h3>Your details</h3><a href="/2about/about1.html">Change these answers</a></li>      
-	            	<li><h3>Your contact details</h3><a href="/2about/about2.html">Change these answers</a></li>    
-	            	<li><h3>Your claim date: 16 January 2014</h3><a href="/2about/about3.html">Change this answer</a></li>           
-	            </ul>
-	         </div>
+				
+		<h1>About you - the Carer</h1>
+		
+        <div class="completed">
+        	<ul aria-label="Completed questions">
+				<li><h3>Your details</h3><a href="/2about/about1.html">Change these answers</a></li>      
+				<li><h3>Your contact details</h3><a href="/2about/about2.html">Change these answers</a></li> 
+				<li><h3>Your claim date: 03/03/2010</h3> <a href="/2about/about3.html">Change this answer</a></li>      
+            </ul>
+         </div>
 	        
 		<fieldset class="form-elements">
-			<legend>More about you</legend>
+				<legend>Your nationality and residency</legend>
+		 <ul>
+		
+		<li>
+		
+		<label for="0f845b09ab9e35deda00bb58f90043d2">What is your nationality? (e.g. British)</label>
+		
+		    <input type="text" autocomplete="off" maxlength="35" helperbelow="If you have a current passport, please give your nationality as shown on your passport." value="" name="0f845b09ab9e35deda00bb58f90043d2" id="0f845b09ab9e35deda00bb58f90043d2">
 
-			<ul>
-			
-				<li>
-				
-				<label for="7ea74a5ae3abf0d9d933b3c38fd38c1f">What is your marital status?</label>	
-				    <select name="7ea74a5ae3abf0d9d933b3c38fd38c1f" id="7ea74a5ae3abf0d9d933b3c38fd38c1f">
-				        
-				        
-				            <option selected value="">Please select</option>
-				        
-				            <option value="m">Married or civil partner</option>
-				        
-				            <option value="s">Single</option>
-				        
-				            <option value="d">Divorced or civil partnership dissolved</option>
-				        
-				            <option value="w">Widowed or surviving civil partner</option>
-				        
-				            <option value="n">Separated</option>
-				        
-				            <option value="p">Living with partner</option>
-				        
-				    </select>
-				
-				</li>
-			
-				<li>
-					<p>Have you had a partner/spouse living with you since your claim date?</p>
+		    <p class="helper">If you have a current passport, please give your nationality as shown on your passport.</p>
+		
+		</li>
+		
+		<li>
+		
+		<fieldset class="question-group">
+		  <p>Do you normally live in England, Scotland or Wales?</p>
+		
+		
+		<ul id="f2050434e686268049bb87b88f405afe2393b5315f9479a1f335ea7d52bca14d" class="radio">
 
-					<ul class="radio" id="spouse_living_with_you_since_your_claim_date">
-						<li><input id="spouse_yes" name="spouse_living_with_you_since_your_claim_date" type="radio" value="yes"> <label for="spouse_yes">Yes</label></li>
-						<li><input id="spouse_no" name="spouse_living_with_you_since_your_claim_date" type="radio" value="no"> <label for="spouse_no">No</label></li>
-					</ul>
-					<p class="helper">If you have separated since the date you want to claim please select 'Yes'</p>
-				</li>
-
-				<li>
-					<p>Have you been on a course of education since your claim date?</p>
-
-					<ul class="radio" id="have_you_been_on_a_course_of_education">
-						<li><input id="education_yes" name="have_you_been_on_a_course_of_education" type="radio" value="yes"> <label for="education_yes">Yes</label></li>
-						<li><input id="education_no" name="have_you_been_on_a_course_of_education" type="radio" value="no"> <label for="education_no">No</label></li>
-					</ul>
-				</li>
-
-				<li>
-					<p>Do you get State Pension?</p>
-
-					<ul class="radio" id="do_you_get_state_pension">
-						<li><input id="pension_yes" name="do_you_get_state_pension" type="radio" value="yes"><label for="pension_yes">Yes</label></li>
-						<li><input id="pension_no" name="do_you_get_state_pension" type="radio" value="no"><label for="pension_no">No</label></li>
-					</ul>
-				</li>
-			</ul>
+		        <li>
+		            <input type="radio" value="yes" onclick="" name="21350917f61eaeb0017fbedec5b756c92393b5315f9479a1f335ea7d52bca14d" id="f2050434e686268049bb87b88f405afe6c6f943cfe9478e56a44e029ac2e6428">
+		            <label for="f2050434e686268049bb87b88f405afe6c6f943cfe9478e56a44e029ac2e6428">Yes</label>
+		        </li>
+		    
+		        <li>
+		            <input type="radio" value="no" onclick="" name="21350917f61eaeb0017fbedec5b756c92393b5315f9479a1f335ea7d52bca14d" id="f2050434e686268049bb87b88f405afea8db7805e1d1a49f508eec928715944f">
+		            <label for="f2050434e686268049bb87b88f405afea8db7805e1d1a49f508eec928715944f">No</label>
+		        </li>
+		
+		</ul>
+		
 		</fieldset>
-				<!-- / form elements -->
+		
+		</li>
+		
+		    <li style="display: none;" class="other-detail" id="residencyWrap">
+		        <ul>
+					<li>
+						<label for="d920e7c18c2fa6bfae8e458a3ce249eb">Which country do you normally live in?</label>
+					    <input type="text" autocomplete="off" maxlength="35" value="" name="dc8e56d9bbad5928a836a6c610c7fb24" id="d920e7c18c2fa6bfae8e458a3ce249eb">
+					</li>
+		        </ul>
+		    </li>
+		
+		            </ul>
+		
+		        </fieldset>				<!-- / form elements -->
 			
 			
 			<div class="form-steps">
