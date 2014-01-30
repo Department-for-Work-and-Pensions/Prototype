@@ -30,7 +30,7 @@
            </li>
          
            <li>
-    	       <p>Address</p>
+    	       <p>Your new address</p>
     	       						
     			<ul class="address-stack">
     				<li><label for="">address_lineOne <em>(optional)</em></label> <input autocomplete="off" id="" maxlength="60" name="" type="text" value=""></li>
@@ -42,22 +42,25 @@
     	
     		</li>
     		
-    		<li><label for="">Postcode</label> <input autocomplete="off" class="postcode" id="" maxlength="60" name="" type="text" value=""></li>
+    		<li><label for="">Your new Postcode</label> <input autocomplete="off" class="postcode" id="" maxlength="60" name="" type="text" value=""></li>
     		
-    		<li>			
-    			<p>Do you have any other changes that you need to tell us about?</p>
-    			<ul class="radio" id="other-changes">
-    		    	<li>
-    		    		<input type="radio" value="other-changes-yes" name="other-changes" id="other-changes-yes">
-    		    		<label for="other-changes-yes">Yes</label>
-    		    	</li>			    
-    				<li>
-    					<input type="radio" value="other-changes-no" name="other-changes" id="other-changes-no">
-    					<label for="other-changes-no">No</label>
-    				</li>
-    			</ul>
+    		
+    		<li>			       
+    				<p>Has the person you care for changed address?</p>
+    				<ul class="radio" id="dp-address-changed">
+    					<li>
+    						<input type="radio" value="dp-address-changed-yes" name="dp-address-changed" id="dp-address-changed-yes">
+    						<label for="dp-address-changed-yes">Yes</label>
+    					</li>			    
+    					<li>
+    						<input type="radio" value="dp-address-changed-no" name="dp-address-changed" id="dp-address-changed-no">
+    						<label for="dp-address-changed-no">No</label>
+    					</li>
+    				</ul>
+    		
     		</li>
-           
+    		
+           <!--#include virtual="../public/_includes/ui/circs-tell-us-more.shtml" --> 
            			       
            </ul><!-- Details / Adresss -->
 			       
