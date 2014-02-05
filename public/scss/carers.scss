@@ -1643,6 +1643,12 @@ footer div {
 
 // New styles from Tim P
 
+// Let's set a max-width for text blocks
+// 50-60 characters per line of text
+.text {
+  max-width: 30em;
+}
+
 .review-page{
 
   p.intro{
