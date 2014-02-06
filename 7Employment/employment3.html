@@ -1,0 +1,58 @@
+<!--#set var="title" value="(About)" -->
+<!--#include virtual="../public/_includes/_global/header.shtml" -->  
+<main role="main" id="main">
+	<div class="carers-allowance">
+		<div class="progress-steps">
+		    <!--#include virtual="../public/_includes/_global/telephone.shtml" -->
+		    <!--#include virtual="../public/_includes/Progress-bar/employment.shtml" -->
+		</div>
+		
+		<section>
+				
+		<h1>About your employment</h1>
+		
+		<fieldset class="form-elements">
+        
+        <legend>Your last wage</legend>
+
+            <ul>
+				<li>
+ 					<p>When were you last paid? <em>(optional)</em></p>
+ 					<!--#include virtual="../public/_includes/ui/date-dropdown.shtml" -->
+				</li>
+				<li class="currency"> 
+					<label for="9789e2b31b57de8cf1640840d6a218d5">What was the gross pay for this period?</label>
+        			<input type="tel" autocomplete="off" maxlength="60" value="" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="9789e2b31b57de8cf1640840d6a218d5" id="9789e2b31b57de8cf1640840d6a218d5">
+				</li>
+				<li>
+					<label for="e7ec1d87a0e6033787a1597e568eadac">What was included in this pay? <em>(optional)</em></label>
+					<textarea maxlength="60" autocomplete="off" helper="60 characters left" placeholder="Please specify..." helperbelow="E.g holiday pay, sick pay" name="e7ec1d87a0e6033787a1597e568eadac" id="e7ec1d87a0e6033787a1597e568eadac"></textarea>
+    				<p class="helper right">60 characters left</p>
+   					<p class="helper">E.g holiday pay, sick pay</p>
+				</li>
+				<li>
+					<p> you get the same amount each time?<em>(optional)</em></p>
+					<ul id="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" class="radio">
+						<li>
+						    <input type="radio" value="yes" onclick="" name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">
+						    <label for="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">Yes</label>
+						</li>
+						
+						<li>
+						    <input type="radio" value="no" onclick="" name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">
+						    <label for="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">No</label>
+						</li>
+					</ul>
+					</li>
+            	</ul>
+        </fieldset><!-- / form elements -->			
+			
+		<div class="form-steps">
+			<a href="employment2.html" class="button secondary">Back</a>
+			<a href="employment4.html" class="button">Next</a>
+		</div><!-- / form steps -->
+		
+	    </section>
+	</div>
+</main>
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
