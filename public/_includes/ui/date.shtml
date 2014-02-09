@@ -1,5 +1,18 @@
-<ul id="4fac6a576115f57660ee532e7504887d" class="inline year">
-		<li>
+<ul class="inline year" id="date">
+	<li>
+		<input autocomplete="off" id="" maxlength="2" name="date-day" placeholder="DD" title="Day" type="tel">
+	</li>
+	<li>
+		<input autocomplete="off" id="" maxlength="2" name="date-month" placeholder="MM" title="Month" type="tel">
+	</li>
+	<li>
+		<input autocomplete="off" id="" maxlength="4" name="date-year" pattern="[0-9 \-]{1,20}" placeholder="YYYY" title="Year" type="tel">
+	</li>
+</ul>
+
+<!--
+<ul id="date" class="inline year">
+	<li>
 		<label for="02aa57dfdb6b93977f2de87cc5d5f2ef">start_day <em>(optional)</em></label>
 		<select name="0facf991b9971ee42918a0d4cafcda18" id="02aa57dfdb6b93977f2de87cc5d5f2ef">
 			<option value="">Day</option>
@@ -59,3 +72,4 @@
 		<input type="tel" autocomplete="off" maxlength="4" placeholder="YYYY" value="" title="Must be numbers only" pattern="[0-9 \-]{1,20}" name="8615b22e56941b3999713a7544318f15" id="4684245046b48bc6394899f3f5e71684">
 	</li>
 </ul>
+-->

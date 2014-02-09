@@ -1,4 +1,4 @@
-<!--#set var="title" value="(About)" -->
+<!--#set var="title" value="(Employment)" -->
 <!--#include virtual="../public/_includes/_global/header.shtml" -->  
 <main role="main" id="main">
 	<div class="carers-allowance">
@@ -17,8 +17,8 @@
 
             <ul>
 				<li>
- 					<p>When were you last paid? <em>(optional)</em></p>
- 					<!--#include virtual="../public/_includes/ui/date-dropdown.shtml" -->
+ 					<p>When were you last paid? <!--<em>(optional)--></em></p>
+ 					<!--#include virtual="../public/_includes/ui/date.shtml" -->
 				</li>
 				<li class="currency"> 
 					<label for="9789e2b31b57de8cf1640840d6a218d5">What was the gross pay for this period?</label>
@@ -26,25 +26,66 @@
 				</li>
 				<li>
 					<label for="e7ec1d87a0e6033787a1597e568eadac">What was included in this pay? <em>(optional)</em></label>
-					<textarea maxlength="60" autocomplete="off" helper="60 characters left" placeholder="Please specify..." helperbelow="E.g holiday pay, sick pay" name="e7ec1d87a0e6033787a1597e568eadac" id="e7ec1d87a0e6033787a1597e568eadac"></textarea>
+					<p class="helper" style="color: #6f777b; margin: 0 0 10px 0; font-size: 19px;">e.g. holiday pay, sick pay, or any redundancy payments</p>
+					<textarea maxlength="60" autocomplete="off" helper="60 characters left" helperbelow="E.g holiday pay, sick pay" name="e7ec1d87a0e6033787a1597e568eadac" id="e7ec1d87a0e6033787a1597e568eadac"></textarea>
     				<p class="helper right">60 characters left</p>
-   					<p class="helper">E.g holiday pay, sick pay</p>
+   					
 				</li>
-				<li>
-					<p> you get the same amount each time?<em>(optional)</em></p>
-					<ul id="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" class="radio">
-						<li>
-						    <input type="radio" value="yes" onclick="" name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">
-						    <label for="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">Yes</label>
-						</li>
-						
-						<li>
-						    <input type="radio" value="no" onclick="" name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">
-						    <label for="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">No</label>
-						</li>
-					</ul>
-					</li>
-            	</ul>
+        		<li>
+        			<label for="b2ba7bf698d08e2cb2008354bd7c89afa068df310467c79eee1b2818fa4f1362">How often are you paid?</label>
+            		<select selectwithother="true" name="ee0d940fc6c812e4c36e84c0fe8c1371a068df310467c79eee1b2818fa4f1362" id="b2ba7bf698d08e2cb2008354bd7c89afa068df310467c79eee1b2818fa4f1362">  
+                    	<option value="">Please select</option> 
+                    	<option value="weekly">Weekly</option>  
+                    	<option value="fortnightly">Fortnightly</option>   
+                    	<option value="fourWeekly">Four-weekly</option>
+                    	<option value="monthly">Monthly</option>
+	                    <option value="other">Other</option>
+            		</select>
+            	</li>
+            	<li>
+            		<p>Do you usually get the same amount each time?<em>(optional)</em></p>
+            		<ul id="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" class="radio">
+            			<li>
+            			    <input type="radio" value="yes"  name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">
+            			    <label for="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">Yes</label>
+            			</li>
+            			
+            			<li>
+            			    <input type="radio" value="no"  name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">
+            			    <label for="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">No</label>
+            			</li>
+            		</ul>
+            	</li>
+            	<li style="display: none;" class="other-detail" id="oftenGetPaid_wrap">
+       				<label for="b2ba7bf698d08e2cb2008354bd7c89afb7257692706af98dcbe1a9601c0fd311">How often are you paid? <em>(optional)</em></label>
+           			<textarea autocomplete="off" maxlength="60" placeholder="If other please specify..." name="ee0d940fc6c812e4c36e84c0fe8c1371b7a36de46a599ff4c0f893f115bdcc0f" id="b2ba7bf698d08e2cb2008354bd7c89afb7257692706af98dcbe1a9601c0fd311"></textarea>
+            		<p class="helper right">60 characters left</p>         
+        		</li>
+        		<li>
+        	<label for="3580cc1c4ad5a1b088110a63a330483a">When do you get paid? <em>(optional)</em></label>
+            <input type="text" maxlength="60" autocomplete="off" helper="E.g. day of the month" value="" name="3580cc1c4ad5a1b088110a63a330483a" id="3580cc1c4ad5a1b088110a63a330483a">
+            <p class="helper right">e.g. the last day of the month</p>
+        
+        </li>
+        
+        <li>
+        
+        <p>Does your employer owe you any money?</p>
+        
+        <ul id="836fc10eaede8822492cf308c195c2baf877076971bca71238d6c66b94d3aa43" class="radio">
+        	<li>
+        	    <input type="radio" value="yes"  name="836fc10eaede8822492cf308c195c2baf877076971bca71238d6c66b94d3aa43" id="836fc10eaede8822492cf308c195c2ba333af0c6da21ae2250831934e9499792">
+        	    <label for="836fc10eaede8822492cf308c195c2ba333af0c6da21ae2250831934e9499792">Yes</label>
+        	</li>
+        	
+        	<li>
+        	    <input type="radio" value="no"  name="836fc10eaede8822492cf308c195c2baf877076971bca71238d6c66b94d3aa43" id="836fc10eaede8822492cf308c195c2babacdb3e0f23d7d3c8ff109172bea6813">
+        	    <label for="836fc10eaede8822492cf308c195c2babacdb3e0f23d7d3c8ff109172bea6813">No</label>
+        	</li>
+        </ul>
+        
+        </li>
+        </ul>
         </fieldset><!-- / form elements -->			
 			
 		<div class="form-steps">

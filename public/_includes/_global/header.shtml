@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CA Prototype <!--#echo var="title" --></title>
+        <title>CA <!--#echo var="title" --></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,6 +15,21 @@
         <link rel="stylesheet" href="../public/css/date-picker.css">
         
         <link rel="stylesheet" href="../public/css/prototype.css">
+        
+        <!-- additional prototype styles -->
+        <style>
+			.carers-allowance .form-elements label + p.helper,
+			.carers-allowance .form-elements p + p.helper {
+				color: #6f777b; 
+				font-size: 1.9rem;
+				margin: 0 0 10px 0 
+			}
+			.carers-allowance .form-elements ul li.grouped {
+				border-left: 4px solid #ccc;
+				padding: 15px 0 30px 25px
+			}
+
+        </style>
         
         <script src="../public/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>

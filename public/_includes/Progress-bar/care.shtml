@@ -1,13 +1,13 @@
 
     <ol>
         <li class="complete">
-            <span>Eligibility</span>
+            <span><a href="/1eligibility/q1.html">Eligibility</a></span>
         </li>
         <li class="complete">
-            <span>About you</span>
+            <span><a href="/2About/about1.html">About you</a></span>
         </li>
         <li class="complete">
-            <span>Partner/Spouse</span>
+            <span><a href="/3Partner/partner1.html">Partner/Spouse</a></span>
         </li>
         <li class="active">
             <span>Care</span>

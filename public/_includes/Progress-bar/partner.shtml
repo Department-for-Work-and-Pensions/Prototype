@@ -1,9 +1,9 @@
 <ol>
     <li class="complete">
-        <span>Eligibility</span>
+        <span><a href="/1eligibility/q1.html">Eligibility</a></span>
     </li>
     <li class="complete">
-        <span>About you</span>
+        <span><a href="/2About/about1.html">About you</a></span>
     </li>
     <li class="active">
         <span>Partner/Spouse</span>
