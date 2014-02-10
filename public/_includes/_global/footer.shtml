@@ -13,28 +13,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="../public/js/plugins.js"></script>
-        <script src="../public/js/custom.js?ver2"></script>
-        <script src="../public/js/jstorage.js"></script>
-        <!--<script> 
-        	/* $.jStorage is now available */ 
-        	
-        	$(document).ready(function() {
-        	
-        		$(function() {
-        	  		$('#first-name').val( $.jStorage.get("key") || "" );
-        		});
-
-				$('a.button').click(function() {
-					$.jStorage.set("key", $("#first-name").val());
-					var input_value = $.jStorage.get("key");
-					//alert(input_value)
-					//return false;
-				});
-	        	
-        	});
-        	
-        </script>-->
+        <script src="../public/js/custom.js?ver2.1"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
     </body>
 </html>

@@ -48,24 +48,24 @@ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
 
 
 
-$.extend($.datepicker, {
-         _doKeyDown: function(event){
-               console.log("test");
-         }
-    });
+//$.extend($.datepicker, {
+        // _doKeyDown: function(event){
+             //  console.log("test");
+         //}
+    //});
     
 
-$("#start-date, #end-date").datepicker({
-		dateFormat: 'dd/mm/yy',
-        showButtonPanel: true,
-        closeText: 'Clear',
-             onClose: function (dateText, inst) {
-            if ($(window.event.srcElement).hasClass('ui-datepicker-close'))
-            {
-                document.getElementById(this.id).value = '';
-            }
-        }
-    });
+//$("#start-date, #end-date").datepicker({
+		//dateFormat: 'dd/mm/yy',
+		//showButtonPanel: true,
+       	//closeText: 'Clear',
+             //onClose: function (dateText, inst) {
+			//if ($(window.event.srcElement).hasClass('ui-datepicker-close'))
+            //{
+               // document.getElementById(this.id).value = '';
+           // }
+       // }
+   // });
  
  // auto jump
  
