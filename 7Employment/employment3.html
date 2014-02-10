@@ -11,6 +11,19 @@
 				
 		<h1>About your employment</h1>
 		
+		<div class="completed">
+		    <ul aria-label="Completed questions">     
+		        <li>
+		            <h3>Your job</h3>
+		            <a href="employment1.html">Change these answers</a>
+		        </li>    
+		        <!--<li>
+		            <h3>Employer's contact details</h3>
+		            <a href="employment2.html">Change these answers</a>
+		        </li>-->
+		    </ul>
+		</div>
+		
 		<fieldset class="form-elements">
         
         <legend>Your last wage</legend>
@@ -19,6 +32,7 @@
 			<li>
 				<p>When were you last paid? <!--<em>(optional)--></em></p>
 				<!--#include virtual="../public/_includes/ui/date.shtml" -->
+				<p class="helper">eg: 30 01 2014</p>
 			</li>
 			<li class="currency"> 
 				<label for="9789e2b31b57de8cf1640840d6a218d5">What was the gross pay for this period?</label>
@@ -26,9 +40,9 @@
 			</li>
 			<li>
 				<label for="e7ec1d87a0e6033787a1597e568eadac">What was included in this pay? <em>(optional)</em></label>
-				<p class="helper" style="color: #6f777b; margin: 0 0 10px 0; font-size: 19px;">e.g. holiday pay, sick pay, or any redundancy payments</p>
-				<textarea maxlength="60" autocomplete="off" helper="60 characters left" helperbelow="E.g holiday pay, sick pay" name="e7ec1d87a0e6033787a1597e568eadac" id="e7ec1d87a0e6033787a1597e568eadac"></textarea>
-				<p class="helper right">60 characters left</p>	
+				<p class="helper">e.g. holiday pay, sick pay, or any redundancy payments</p>
+				<textarea maxlength="60" autocomplete="off" helperbelow="e.g holiday pay, sick pay" name="e7ec1d87a0e6033787a1597e568eadac" id="e7ec1d87a0e6033787a1597e568eadac"></textarea>
+				<!--<p class="helper right">60 characters left</p>-->
 			</li>
     		<li>
     			<label for="how-often-paid">How often are you paid?</label>
@@ -44,7 +58,7 @@
 	    	<li style="display: none;" class="other-detail">
 				<!--<label for="how-often-paid-other">How often are you paid? <em>(optional)</em></label>-->
 	   			<textarea autocomplete="off" maxlength="60" placeholder="Please specify..." name="how-often-paid-other" id="how-often-paid-other"></textarea>
-	    		<p class="helper right">60 characters left</p>         
+	    		<!--<p class="helper right">60 characters left</p>-->        
 			</li>
 			<li>
 				<p>Do you usually get the same amount each time?<em>(optional)</em></p>
@@ -82,7 +96,7 @@
         </fieldset><!-- / form elements -->			
 			
 		<div class="form-steps">
-			<a href="employment2.html" class="button secondary">Back</a>
+			<a href="employment1.html" class="button secondary">Back</a>
 			<a href="employment4.html" class="button">Next</a>
 		</div><!-- / form steps -->
 		
