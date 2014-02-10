@@ -9,6 +9,8 @@
 		<section>
 	        <h1>About you - the Carer</h1>
 	        
+	        <p class="security-message">Your claim date is <strong style="text-decoration: none;"><!--#include virtual="../public/_includes/ui/claim-date.shtml" --></strong>.</p>
+	        
 	        <div class="completed">
 	        	<ul aria-label="Completed questions">
 	            	<li><h3>Your details</h3><a href="/2about/about1.html">Change these answers</a></li>      
@@ -22,54 +24,6 @@
 	  	        
 			<fieldset class="form-elements">
 			<legend>What is your marital status?</legend>
-
-			<style>
-			 .carers-allowance .form-elements ul.radio-block {
-			 	margin: 5px 0 0 1px;
-			 	padding: 0;
-			 	position: relative;
-			 	width: 300px;
-			 }
-			 
-			 .carers-allowance .form-elements ul.radio-block li {
-			    	margin: 0 0 5px 0;
-			     padding: 0;
-			     position: relative;
-			    	width: 370px;
-			 }
-			 
-			 .carers-allowance .form-elements ul.radio-block li input[type="radio"] {
-			     cursor: pointer;
-			     left: 14px;
-			     line-height: 1em;
-			     margin: 0;
-			     position: absolute;
-			     top: 13px;
-			 }
-			
-			 .radio-block input[type="radio"] {
-			     left: 12px !important;
-			     top: 14px !important;
-			 }
-			 
-			 .carers-allowance .form-elements ul.radio-block li label {
-			     background: none repeat scroll 0 0 #EEEEEE;
-			     border: 1px solid #FFFFFF;
-			     cursor: pointer;
-			     display: block;
-			     font-size: 1.7rem;
-			     font-weight: 500;
-			     line-height: 1em;
-			     padding: 12px 14px 10px 34px;    
-			 }
-			 
-			 .carers-allowance .form-elements ul.radio-block li input[type="radio"]:checked + label {
-			     background: none repeat scroll 0 0 #FFFFFF;
-			     border: 1px solid #A2A2A2;
-			     transition: all 200ms ease-in 0s;
-			 }
-			 
-			 </style>
 
 			<ul>
 				<li>			
@@ -86,10 +40,7 @@
 						<li>
 							<input type="radio" value="marital-status-p" name="marital-status" id="marital-status-p">
 							<label for="marital-status-p">Living with partner</label>
-						</li>	
-					<!--</ul>
-					<p>or</p>
-					<ul class="radio-block" id="marital-status">	-->
+						</li>
 						<li>
 							<input type="radio" value="marital-status-d" name="marital-status" id="marital-status-d">
 							<label for="marital-status-d">Divorced or civil partnership dissolved</label>
@@ -128,12 +79,17 @@
 				
 				<li style="display:none; padding-left: 25px; border-left: 4px solid #ccc;" class="spouse_living_with_you q3">
 					<p>Have you lived with this person since your claim date?</p>
-	
+					<p class="helper">If you have separated since the date you want to claim please select 'Yes'</p>
 					<ul class="radio" id="spouse_living_with_you_since_your_claim_date">
-						<li><input id="spouse_yes" name="spouse_living_with_you_since_your_claim_date" type="radio" value="yes"> <label for="spouse_yes">Yes</label></li>
-						<li><input id="spouse_no" name="spouse_living_with_you_since_your_claim_date" type="radio" value="no"> <label for="spouse_no">No</label></li>
+						<li>
+							<input id="spouse_yes" name="spouse_living_with_you_since_your_claim_date" type="radio" value="yes"> 
+							<label for="spouse_yes">Yes</label>
+						</li>
+						<li>
+							<input id="spouse_no" name="spouse_living_with_you_since_your_claim_date" type="radio" value="no"> 
+							<label for="spouse_no">No</label>
+						</li>
 					</ul>
-					<!--<p class="helper">If you have separated since the date you want to claim please select 'Yes'</p>-->
 				</li>
 				
 				</ul>
@@ -154,34 +110,31 @@
 				</li>
 			</ul>		
 			
-		</fieldset>
-				<!-- / form elements -->
-			
+		</fieldset><!-- / form elements -->		
 			
 <div class="form-steps">
 	<a href="about6.html" class="button secondary">Back</a>
-	<a href="/3Partner/partner1.html" class="button">Next</a>
+	<a href="/3Partner/partner1.html" class="button" id="continue">Next</a>
 </div><!-- / form steps -->
 
-	    </section>
-	</div>
+</section>
+</div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
-
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
 
 <script>
-$(document).ready(function() {    
-
-    	$('#marital-status-s').click(function(){
-    		$('.spouse_living_with_you').hide();
-    		$('.spouse_living_with_you.q1').show('medium');
-        });
+	$(document).ready(function() {    
+		$('#marital-status-s').click(function(){
+			$('.spouse_living_with_you').hide();
+			$('.spouse_living_with_you.q1').show('medium');
+		});
 		$('#marital-status-m').click(function(){
 			$('.spouse_living_with_you').hide();
 			$('.spouse_living_with_you.q3').show('medium');
 		});
 		$('#marital-status-p').click(function(){
 			$('.spouse_living_with_you').hide('medium');
+			$('#continue').attr('href','/3Partner/partner1.html');
 		});
 		$('#marital-status-d').click(function(){
 			$('.spouse_living_with_you').hide();
@@ -194,7 +147,9 @@ $(document).ready(function() {
 		$('#marital-status-n').click(function(){
 			$('.spouse_living_with_you').hide();
 			$('.spouse_living_with_you.q1').show('medium');
+		});  
+		$('#spouse_no').click(function(){
+			$('#continue').attr('href','/4Care/care1.html');
 		});
-        
-}); 
+	}); 
 </script>

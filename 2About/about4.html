@@ -30,23 +30,22 @@
 			</li>	
 			<li>	
 				<p>Do you normally live in England, Scotland or Wales?</p>
-				<ul id="f2050434e686268049bb87b88f405afe2393b5315f9479a1f335ea7d52bca14d" class="radio">
+				<ul id="normally-live" class="radio">
 			        <li>
-			            <input type="radio" value="yes"  name="21350917f61eaeb0017fbedec5b756c92393b5315f9479a1f335ea7d52bca14d" id="f2050434e686268049bb87b88f405afe6c6f943cfe9478e56a44e029ac2e6428">
-			            <label for="f2050434e686268049bb87b88f405afe6c6f943cfe9478e56a44e029ac2e6428">Yes</label>
+			            <input type="radio" value="yes"  name="normally-live" id="normally-live-yes">
+			            <label for="normally-live-yes">Yes</label>
 			        </li>
-			    
 			        <li>
-			            <input type="radio" value="no"  name="21350917f61eaeb0017fbedec5b756c92393b5315f9479a1f335ea7d52bca14d" id="f2050434e686268049bb87b88f405afea8db7805e1d1a49f508eec928715944f">
-			            <label for="f2050434e686268049bb87b88f405afea8db7805e1d1a49f508eec928715944f">No</label>
+			            <input type="radio" value="no" name="normally-live" id="normally-live-no">
+			            <label for="normally-live-no">No</label>
 			        </li>
 				</ul>	
 			</li>
-		    <li style="display: none;" class="other-detail" id="residencyWrap">
+		    <li style="display: none;" class="other-detail">
 		        <ul>
 					<li>
-						<label for="d920e7c18c2fa6bfae8e458a3ce249eb">Which country do you normally live in?</label>
-					    <input type="text" autocomplete="off" maxlength="35" value="" name="dc8e56d9bbad5928a836a6c610c7fb24" id="d920e7c18c2fa6bfae8e458a3ce249eb">
+						<label for="normally-live-details">Which country do you normally live in?</label>
+					    <input type="text" autocomplete="off" maxlength="35" value="" name="normally-live-details" id="normally-live-details">
 					</li>
 		        </ul>
 		    </li>
@@ -62,4 +61,18 @@
 	    </section>
 	</div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+
+// Show & Hide Fields
+$(document).ready(function() {  
+	$('#normally-live-no').click(function(){
+		$(this).parents('ul li').next('.other-detail').show('medium');
+	});
+	$('#normally-live-yes').click(function(){
+		$(this).parents('ul li').next('.other-detail').hide('medium');
+	});
+});
+
+</script>

@@ -31,7 +31,7 @@
 </ul>
 </fieldset>
 
-<fieldset class="form-elements">
+<fieldset class="form-elements" id="course-details" style="display: none;">
     
 <legend>Course details</legend>
 <ul>
@@ -77,4 +77,15 @@
 </section>
 </div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+	$(document).ready(function() {    
+		$('#education_yes').click(function(){
+			$('#course-details').show('medium');
+		});
+		$('#education_no').click(function(){
+			$('#course-details').hide('medium');
+		});
+	}); 
+</script>

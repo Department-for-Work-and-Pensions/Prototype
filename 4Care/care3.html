@@ -52,18 +52,18 @@
 	</li>
 	<li>
 		<p>Did you care for this person for 35 hours or more each week before your claim date?</p>
-		<ul id="2b11ea0ffce1a66322dc85841e15e7c5b47f13cea65c0a6804ffd626e3a6d421" class="radio">
+		<ul id="care-before-claim-date" class="radio">
 			<li>
-				<input type="radio" value="yes"  name="2b11ea0ffce1a66322dc85841e15e7c502eb2a15ccba503836a1b7dba2911494" id="2b11ea0ffce1a66322dc85841e15e7c541a90a8807c8cf6903f2dce148a4a1b7">
-				<label for="2b11ea0ffce1a66322dc85841e15e7c541a90a8807c8cf6903f2dce148a4a1b7">Yes</label>
+				<input type="radio" value="yes" name="care-before-claim-date" id="care-before-claim-date-yes">
+				<label for="care-before-claim-date-yes">Yes</label>
 			</li>
 			<li>
-				<input type="radio" value="no"  name="2b11ea0ffce1a66322dc85841e15e7c502eb2a15ccba503836a1b7dba2911494" id="2b11ea0ffce1a66322dc85841e15e7c55985367bd7a76264e2519e0d5b140d32">
-				<label for="2b11ea0ffce1a66322dc85841e15e7c55985367bd7a76264e2519e0d5b140d32">No</label>
+				<input type="radio" value="no" name="care-before-claim-date" id="care-before-claim-date-no">
+				<label for="care-before-claim-date-no">No</label>
 			</li>
 		</ul>
 	</li>
-	<li style="display: block;" class="other-detail" id="careStartDateWrap">
+	<li style="display: none;" class="other-detail">
 		<ul>
 			<li>
 			<p>When did you start to care for this person?</p>
@@ -86,3 +86,18 @@
 
 </main>
 <!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+
+// Show & Hide Fields
+
+$(document).ready(function() {  
+	$('#care-before-claim-date-yes').click(function(){
+		$(this).parents('ul li').next('.other-detail').show('medium');
+	});
+	$('#care-before-claim-date-no').click(function(){
+		$(this).parents('ul li').next('.other-detail').hide('medium');
+	});
+});
+
+</script>

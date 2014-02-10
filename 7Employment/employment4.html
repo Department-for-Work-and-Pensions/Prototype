@@ -1,145 +1,144 @@
 <!--#set var="title" value="(Employment)" -->
 <!--#include virtual="../public/_includes/_global/header.shtml" -->  
 <main role="main" id="main">
-	<div class="carers-allowance">
-		<div class="progress-steps">
-		    <!--#include virtual="../public/_includes/_global/telephone.shtml" -->
-		    <!--#include virtual="../public/_includes/Progress-bar/employment.shtml" -->
-		</div>
-		
-		<section>
-				
-		<h1>About your employment</h1>
-		
-		<div class="completed">
-	        <ul aria-label="Completed questions">     
-		        <li>
-		            <h3>Your job</h3>
-		            <a href="/employment1.html">Change these answers</a>
-		        </li>    
-		        <li>
-		            <h3>Employer's contact details</h3>
-		            <a href="/employment2.html">Change these answers</a>
-		        </li>
-		        <li>
-		            <h3>Your last wage</h3>
-		            <a href="/employment3.html">Change these answers</a>
-		        </li>
-	        </ul>
-		</div>
-		
-		<fieldset class="form-elements">
-		<legend>Pension schemes</legend>
-		
-		<ul>
-		<li>
-		<fieldset class="question-group">
-		<p>Do you pay towards an occupational pension scheme?</p>
-		
-		<ul id="e863ee55bdb5d206a259d992d0c26af77f03a6925baa90c792cc8d5f922005f1" class="radio">
-		    
-		        <li>
-		            <input type="radio" value="yes"  name="e863ee55bdb5d206a259d992d0c26af77f03a6925baa90c792cc8d5f922005f1" id="e863ee55bdb5d206a259d992d0c26af7ace3981a80e3a89a86e50b290dda688c679d0b18d6402f06eb60c187c8dcce7f">
-		            <label for="e863ee55bdb5d206a259d992d0c26af7ace3981a80e3a89a86e50b290dda688c679d0b18d6402f06eb60c187c8dcce7f">Yes</label>
-		        </li>
-		    
-		        <li>
-		            <input type="radio" value="no"  name="e863ee55bdb5d206a259d992d0c26af77f03a6925baa90c792cc8d5f922005f1" id="e863ee55bdb5d206a259d992d0c26af7badadfffb6d65edf5ce465570aa06263">
-		            <label for="e863ee55bdb5d206a259d992d0c26af7badadfffb6d65edf5ce465570aa06263">No</label>
-		        </li>
-			</ul>
-		
-		</fieldset>
-			</li>
-			    <li style="display: none;" class="other-detail" id="payOccupationalPensionSchemeWrapper">
-		        <ul>
-			 <li class="currency"> 
-		
-		<label for="f9c6d04a48e3a195d97e341911de31f0">How much do you pay?</label>
-		
-		        <input type="tel" autocomplete="off" maxlength="60" placeholder="£" value="" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="f9c6d04a48e3a195d97e341911de31f0" id="f9c6d04a48e3a195d97e341911de31f0">
-		    
-		</li>
+<div class="carers-allowance">
+<div class="progress-steps">
+    <!--#include virtual="../public/_includes/_global/telephone.shtml" -->
+    <!--#include virtual="../public/_includes/Progress-bar/employment.shtml" -->
+</div>
 
-		<li>
-			<label for="9a4cc36d7d261e4862d92455af6fa6962ad00a54fb88008cf8674f8d48a9acd9">How often?</label>
-		    <select selectwithother="true" name="7c0f3c20dbf7880fe03e4d2e5c7b1ff32ad00a54fb88008cf8674f8d48a9acd9" id="9a4cc36d7d261e4862d92455af6fa6962ad00a54fb88008cf8674f8d48a9acd9">
+<section>
+		
+<h1>About your employment</h1>
+
+<div class="completed">
+    <ul aria-label="Completed questions">     
+        <li>
+            <h3>Your job</h3>
+            <a href="employment1.html">Change these answers</a>
+        </li>    
+        <li>
+            <h3>Employer's contact details</h3>
+            <a href="employment2.html">Change these answers</a>
+        </li>
+        <li>
+            <h3>Your last wage</h3>
+            <a href="employment3.html">Change these answers</a>
+        </li>
+    </ul>
+</div>
+		
+<fieldset class="form-elements">
+<legend>Pension schemes</legend>
+		
+<ul>
+	<li>
+		<p>Do you pay towards an occupational pension scheme?</p>
+		<ul id="pay-occupational-pension" class="radio">
+	        <li>
+	            <input type="radio" value="yes" name="pay-occupational-pension" id="pay-occupational-pension-yes">
+	            <label for="pay-occupational-pension-yes">Yes</label>
+	        </li>
+	        <li>
+	            <input type="radio" value="no"  name="pay-occupational-pension" id="pay-occupational-pension-no">
+	            <label for="pay-occupational-pension-no">No</label>
+	        </li>
+		</ul>
+	</li>
+	
+	<li style="display: none;" class="other-detail grouped">
+		<ul>
+			<li class="currency"> 
+				<label for="how-much">How much do you pay?</label>
+		        <input type="tel" autocomplete="off" maxlength="60" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="how-much" id="how-much">
+			</li>
+			<li>
+				<label for="how-often-pension">How often?</label>
+			    <select selectwithother="true" name="how-often-pension" id="how-often-pension">
 		            <option value="">Please select</option>
 		            <option value="02">Weekly</option>
 		            <option value="03">Fortnightly</option>
 		            <option value="04">Four-weekly</option>
 		            <option value="05">Monthly</option>
 		            <option value="other">Other</option> 
-		    </select>
-		 </li>
-		 <li style="display: none;" class="other-detail" id="howOftenPension_wrap">
-			<label for="9a4cc36d7d261e4862d92455af6fa69648ade7404325600d96d5c8e45d5cb6fa">How often?</label>
-		    <textarea autocomplete="off" maxlength="60" placeholder="If other please specify..." name="7c0f3c20dbf7880fe03e4d2e5c7b1ff3cf2d017a016dfccd364a93ed7fcb9ed8" id="9a4cc36d7d261e4862d92455af6fa69648ade7404325600d96d5c8e45d5cb6fa"></textarea>
-			<p class="helper right">60 characters left</p>       
-		 </li>
-
-		<li>
-		
-		<fieldset class="question-group">
+		    	</select>
+		 	</li>
+		 </ul>
+	</li>
+	<!--<li style="display: none;" class="other-detail" id="howOftenPension_wrap">
+		<label for="how-often-pension-other">How often?</label>
+		<textarea autocomplete="off" maxlength="60" placeholder="If other please specify..." name="how-often-pension-other" id="how-often-pension-other"></textarea>
+		<p class="helper right">60 characters left</p>       
+	</li>-->	
+	<li>
 		<p>Do you pay towards a personal or stakeholder pension scheme or a retirement annuity scheme?</p>
-		
-		<ul id="15a567ae729200c4db8902548d3113738f9238d84d93f059a9b4f717b8c0aec1" class="radio">
-
-		        <li>
-		            <input type="radio" value="yes"  name="15a567ae729200c4db8902548d3113738f9238d84d93f059a9b4f717b8c0aec1" id="15a567ae729200c4db8902548d31137350722d477ba27521fc65fb98831ac309">
-		            <label for="15a567ae729200c4db8902548d31137350722d477ba27521fc65fb98831ac309">Yes</label>
-		        </li>
-		    
-		        <li>
-		            <input type="radio" value="no"  name="15a567ae729200c4db8902548d3113738f9238d84d93f059a9b4f717b8c0aec1" id="15a567ae729200c4db8902548d31137353e51bde2c64aa379672618528b57711">
-		            <label for="15a567ae729200c4db8902548d31137353e51bde2c64aa379672618528b57711">No</label>
-		        </li>
+		<ul id="pay-personal-pension" class="radio">
+			<li>
+		    	<input type="radio" value="yes" name="pay-personal-pension" id="pay-personal-pension-yes">
+				<label for="pay-personal-pension-yes">Yes</label>
+			</li>
+			<li>
+				<input type="radio" value="no"  name="pay-personal-pension" id="pay-personal-pension-no">
+				<label for="pay-personal-pension-no">No</label>
+			</li>
 		</ul>
-		
-		</fieldset>
-
-		</li>
-		    <li style="display: none;" class="other-detail" id="payPersonalPensionSchemeWrapper">
-		        <ul>
-		           
-		 <li class="currency"> 
-		<label for="3a5efc8398de3add194db85a26f5ae2c">How much do you pay?</label>
-		
-		        <input type="tel" autocomplete="off" maxlength="60" placeholder="£" value="" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="3a5efc8398de3add194db85a26f5ae2c" id="3a5efc8398de3add194db85a26f5ae2c">
-		</li>
-		<li>
-		
-		<label for="f4f72885aa832e43f5b2b3a4580d79fb5f729e42bd830dc2062aa4deba104360">How often?</label>
-		
-		    <select selectwithother="true" name="f4f72885aa832e43f5b2b3a4580d79fb5e2f74fef1bea21f9caaf24af8eaf3c5" id="f4f72885aa832e43f5b2b3a4580d79fb5f729e42bd830dc2062aa4deba104360">
+	</li>
+	
+	<li style="display: none;" class="other-detail grouped">
+		<ul>	           
+			<li class="currency"> 
+				<label for="3a5efc8398de3add194db85a26f5ae2c">How much do you pay?</label>
+	        	<input type="tel" autocomplete="off" maxlength="60" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="3a5efc8398de3add194db85a26f5ae2c" id="3a5efc8398de3add194db85a26f5ae2c">
+			</li>
+			<li>
+				<label for="f4f72885aa832e43f5b2b3a4580d79fb5f729e42bd830dc2062aa4deba104360">How often?</label>
+		    	<select selectwithother="true" name="f4f72885aa832e43f5b2b3a4580d79fb5e2f74fef1bea21f9caaf24af8eaf3c5" id="f4f72885aa832e43f5b2b3a4580d79fb5f729e42bd830dc2062aa4deba104360">
 		            <option value="">Please select</option>
 		            <option value="02">Weekly</option>
 		            <option value="03">Fortnightly</option>
 		            <option value="04">Four-weekly</option>
 		            <option value="05">Monthly</option>
-		            <option value="other">Other</option>
-		        
-		    </select>
-
-		    </li><li style="display: none;" class="other-detail" id="howOftenPersonal_wrap">
+		            <option value="other">Other</option> 
+		    	</select>
+	    	</li>
+		</ul>
+	</li>
 		
+	<li style="display: none;" class="other-detail" id="howOftenPersonal_wrap">
 		<label for="f4f72885aa832e43f5b2b3a4580d79fbdbb8643ecc9960345333eef3a815fe52679d0b18d6402f06eb60c187c8dcce7f">How often?</label>
-		
-		    <textarea autocomplete="off" maxlength="60" placeholder="If other please specify..." name="f4f72885aa832e43f5b2b3a4580d79fbf5cdc83c14ae5d951eb69af9df76e8e3679d0b18d6402f06eb60c187c8dcce7f" id="f4f72885aa832e43f5b2b3a4580d79fbdbb8643ecc9960345333eef3a815fe52679d0b18d6402f06eb60c187c8dcce7f"></textarea>
-         
+		<textarea autocomplete="off" maxlength="60" placeholder="If other please specify..." name="f4f72885aa832e43f5b2b3a4580d79fbf5cdc83c14ae5d951eb69af9df76e8e3679d0b18d6402f06eb60c187c8dcce7f" id="f4f72885aa832e43f5b2b3a4580d79fbdbb8643ecc9960345333eef3a815fe52679d0b18d6402f06eb60c187c8dcce7f"></textarea>
 		<p class="helper right">60 characters left</p>
-		</li>  
-		</ul>
-		</li>
-		
-		</ul>
-		</fieldset><!-- / form elements -->
+	</li>  
+
+</ul>
+</fieldset><!-- / form elements -->
 			
-		<div class="form-steps">
-			<a href="employment3.html" class="button secondary">Back</a>
-			<a href="employment5.html" class="button">Next</a>
-		</div><!-- / form steps -->
-	    </section>
-	</div>
+<div class="form-steps">
+	<a href="employment3.html" class="button secondary">Back</a>
+	<a href="employment5.html" class="button">Next</a>
+</div><!-- / form steps -->
+</section>
+</div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+
+// Show & Hide Fields
+
+$(document).ready(function() {  
+	$('#pay-occupational-pension-yes').click(function(){
+		$(this).parents('ul li').next('.other-detail').show('medium');
+	});
+	$('#pay-occupational-pension-no').click(function(){
+		$(this).parents('ul li').next('.other-detail').hide('medium');
+	});
+	$('#pay-personal-pension-yes').click(function(){
+		$(this).parents('ul li').next('.other-detail').show('medium');
+	});
+	$('#pay-personal-pension-no').click(function(){
+		$(this).parents('ul li').next('.other-detail').hide('medium');
+	});
+});
+
+</script>

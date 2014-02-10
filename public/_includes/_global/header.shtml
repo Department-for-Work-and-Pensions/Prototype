@@ -28,19 +28,55 @@
 				border-left: 4px solid #ccc;
 				padding: 15px 0 30px 25px
 			}
-
+			 .carers-allowance .form-elements ul.radio-block {
+			 	margin: 5px 0 0 1px;
+			 	padding: 0;
+			 	position: relative;
+			 	width: 300px;
+			 }
+			 .carers-allowance .form-elements ul.radio-block li {
+			    margin: 0 0 5px 0;
+			    padding: 0;
+			    position: relative;
+			    width: 370px;
+			 }
+			 .carers-allowance .form-elements ul.radio-block li input[type="radio"] {
+			    cursor: pointer;
+			    left: 14px;
+			    line-height: 1em;
+			    margin: 0;
+			    position: absolute;
+			    top: 13px;
+			 }
+			 .radio-block input[type="radio"] {
+			    left: 12px !important;
+			    top: 14px !important;
+			 }
+			 .carers-allowance .form-elements ul.radio-block li label {
+			    background: none repeat scroll 0 0 #EEEEEE;
+			    border: 1px solid #FFFFFF;
+			    cursor: pointer;
+			    display: block;
+			    font-size: 1.7rem;
+			    font-weight: 500;
+			    line-height: 1em;
+			    padding: 12px 14px 10px 34px;    
+			 }
+			 .carers-allowance .form-elements ul.radio-block li input[type="radio"]:checked + label {
+			    background: none repeat scroll 0 0 #FFFFFF;
+			    border: 1px solid #A2A2A2;
+			    transition: all 200ms ease-in 0s;
+			 }
         </style>
         
         <script src="../public/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <header>
+    <header>
         
-        <div>
-            
-            <a href="#" class="logo"><img src="../public/img/logo.png" alt="Gov.uk"></a>
-            <h1 class="beta"><strong>Carer's Allowance</strong> <span>beta</span></h1>
-            
-        </div>
+	    <div>
+	        <a href="#" class="logo"><img src="../public/img/logo.png" alt="Gov.uk"></a>
+	        <h1 class="beta"><strong>Carer's Allowance</strong> <span>beta</span></h1>
+	    </div>
         
     </header>

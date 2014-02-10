@@ -25,45 +25,51 @@
 		<legend>Time outside of England, Scotland or Wales</legend>
 		
 		<ul>
-
-		<li>
-			
-			<p>Have you been out of England, Scotland or Wales for more than 52 weeks in the last 3 years before your claim date? </p>
-			
-			
-			<ul id="5e7f620287e03c5ecfc6bf351a52b69e" class="radio">
-		        <li>
-		            <input type="radio" helperbelow="This could be one trip of 52 weeks, or a number of trips adding up to 52 weeks." value="yes"  name="5e7f620287e03c5ecfc6bf351a52b69e" id="5377c6370f0b61add8bad24bd9e1f4f0">
-		            <label for="5377c6370f0b61add8bad24bd9e1f4f0">Yes</label>
-		        </li>
-		    
-		        <li>
-		            <input type="radio" helperbelow="This could be one trip of 52 weeks, or a number of trips adding up to 52 weeks." value="no"  name="5e7f620287e03c5ecfc6bf351a52b69e" id="7c098fb50abcad5d1281d6668c96b28b">
-		            <label for="7c098fb50abcad5d1281d6668c96b28b">No</label>
-		        </li>
-			</ul>
-		
-			<p class="helper">This could be one trip of 52 weeks, or a number of trips adding up to 52 weeks.</p>
-		
-		</li>
-		
+			<li>
+				<p>Have you been out of England, Scotland or Wales for more than 52 weeks in the last 3 years before your claim date? </p>
+				<p class="helper">This could be one trip, or a number of trips adding up to 52 weeks</p>		
+				<ul id="time-outside" class="radio">
+			        <li>
+			            <input type="radio" value="yes" name="time-outside" id="time-outside-yes">
+			            <label for="time-outside-yes">Yes</label>
+			        </li>
+			        <li>
+			            <input type="radio" value="no" name="time-outside" id="time-outside-no">
+			            <label for="time-outside-no">No</label>
+			        </li>
+				</ul>		
+			</li>
 		</ul>
 		
 	    <div style="display: none;" class="prompt breaks-prompt breaks-error-prompt" id="warningMessageWrap">
-	        <p>Tell us about any other time outside England, Scotland or Wales in the additional information section near the end of the claim.</p>
-	        <span>!</span>
+	        <p>Tell us about any other time outside England, Scotland or Wales in the additional information section at the end of this application.</p>
+	        <!--<span>!</span>-->
 	    </div>
 		
 		</fieldset>
 			
 		<div class="form-steps">
 			<a href="about4.html" class="button secondary">Back</a>
-			<a href="about5-2.html" class="button">Next</a>
-		</div>
-		<!-- / form steps -->
-			
+			<a href="about6.html" class="button" id="continue">Next</a>
+		</div><!-- / form steps -->
 			
 	    </section>
 	</div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+
+// Show & Hide Fields
+$(document).ready(function() {  
+	$('#time-outside-yes').click(function(){
+		//$("#warningMessageWrap").show('medium');
+		$('#continue').attr('href','about5-2.html');
+	});
+	$('#time-outside-no').click(function(){
+		//$("#warningMessageWrap").hide('medium');
+		$('#continue').attr('href','about6.html');
+	});
+});
+
+</script>

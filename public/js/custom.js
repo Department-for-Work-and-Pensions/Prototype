@@ -66,25 +66,9 @@ $("#start-date, #end-date").datepicker({
             }
         }
     });
-    
  
  // auto jump
  
- $('#ni-1, #ni-2, #ni-3, #ni-4, #ni-5').autotab_magic();
-
-
-//
-
-              
-	$('#additional-no').click(function(){
-    	$('.other-detail').hide('medium');
-    });
-    $('#additional-yes').click(function(){
-    	$('.other-detail').show('medium');
-    });
-    
-
-
-	 
-	 
+$('#ni-1, #ni-2, #ni-3, #ni-4, #ni-5').autotab_magic();
+ 
 });

@@ -14,7 +14,7 @@
 		<input type="hidden" value="8d1c7066-6913-41c8-b4fc-1f26bd88a19d" name="jobID">
 		
 		<fieldset class="form-elements">
-		<legend>Your job</legend>
+		<legend>Employment details</legend>
 		
 		<ul>
 		<li>
@@ -26,21 +26,20 @@
 			<!--#include virtual="../public/_includes/ui/date.shtml" -->
 		    <p class="helper">eg: 27 June 2013</p>
 		</li>
-
 		<li>
 			<p>Have you finished this job?</p>
-			<ul id="25a12f6e55d1ba07f6bf5e8b3083932d" class="radio">
+			<ul id="finished-job" class="radio">
 		        <li>
-		            <input type="radio" value="yes"  name="25a12f6e55d1ba07f6bf5e8b3083932d" id="cd5959bf04d46bd2f8944d7da6e3a82f22f3688f31e17267c435fe9c91f14756">
-		            <label for="cd5959bf04d46bd2f8944d7da6e3a82f22f3688f31e17267c435fe9c91f14756">Yes</label>
+		            <input type="radio" value="yes" name="finished-job" id="finished-job-yes">
+		            <label for="finished-job-yes">Yes</label>
 		        </li>
 		        <li>
-		            <input type="radio" value="no"  name="25a12f6e55d1ba07f6bf5e8b3083932d" id="cd5959bf04d46bd2f8944d7da6e3a82fa62d62032a76742745aa2f7399491e1c">
-		            <label for="cd5959bf04d46bd2f8944d7da6e3a82fa62d62032a76742745aa2f7399491e1c">No</label>
+		            <input type="radio" value="no"  name="finished-job" id="finished-job-no">
+		            <label for="finished-job-no">No</label>
 		        </li>
 			</ul>
 		</li>	
-		<li style="display: none;" class="other-detail" id="lastWorkData">
+		<li style="display: none;" class="other-detail">
 			<ul>
 				<li>
 		  			<p>What date did you last work?</p>
@@ -62,7 +61,7 @@
 		</fieldset>		
 			
 		<div class="form-steps">
-			<a href="#" class="button secondary">Back</a>
+			<a href="employment-guard.html" class="button secondary">Back</a>
 			<a href="employment2.html" class="button">Next</a>
 		</div>
 			
@@ -70,4 +69,19 @@
 	    </section>
 	</div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" --> 
+
+<script>
+
+// Show & Hide Fields
+
+$(document).ready(function() {  
+	$('#finished-job-yes').click(function(){
+		$(this).parents('ul li').next('.other-detail').show('medium');
+	});
+	$('#finished-job-no').click(function(){
+		$(this).parents('ul li').next('.other-detail').hide('medium');
+	});
+});
+
+</script>

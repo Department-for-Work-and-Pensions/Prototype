@@ -46,8 +46,8 @@
 				</fieldset>
 			</li>
 			<li>
-				<label for="16d21a808bbfad8f39d005960b350727">Reason for being there? <em>(optional)</em></label>
-				<select selectwithother="true" name="6d708fcd52845c37336c026dd1fad854" id="16d21a808bbfad8f39d005960b350727">
+				<label for="reason-for-being-there">Reason for being there? <em>(optional)</em></label>
+				<select selectwithother="true" name="reason-for-being-there" id="reason-for-being-there">
 					<option value="">Please select</option>
 					<option value="Home">Home</option>
 					<option value="Holiday">Holiday</option>
@@ -55,9 +55,9 @@
 					<option value="other">Other</option>
 				</select>
 			</li>
-			<li style="display: none;" class="other-detail" id="reasonForBeingThere_wrap">
-				<label for="1636b11acf749ab1dd09d9c90cdffc84067e22d399db39adc0112c4b46dde89f">Reason for being there <em>(optional)</em></label>
-				<textarea autocomplete="off" maxlength="60" placeholder="If other please specify..." name="a3e3e88439222ec8f8d8844f818b1d0c067e22d399db39adc0112c4b46dde89f" id="1636b11acf749ab1dd09d9c90cdffc84067e22d399db39adc0112c4b46dde89f"></textarea>
+			<li style="display: none;" class="other-detail">
+				<!--<label for="1636b11acf749ab1dd09d9c90cdffc84067e22d399db39adc0112c4b46dde89f">Reason for being there <em>(optional)</em></label>-->
+				<textarea autocomplete="off" maxlength="60" placeholder="Please specify..." name="a3e3e88439222ec8f8d8844f818b1d0c067e22d399db39adc0112c4b46dde89f" id="1636b11acf749ab1dd09d9c90cdffc84067e22d399db39adc0112c4b46dde89f"></textarea>
 				<p class="helper right">60 characters left</p>
 			</li>
 			<li>
@@ -78,16 +78,10 @@
 </ul>
 </fieldset>		
 
-<p class="helper">This could be one trip of 52 weeks, or a number of trips adding up to 52 weeks.</p>
-
 </li>
-
 
 </ul>
 
-<div style="display: none;" class="prompt breaks-prompt breaks-error-prompt" id="warningMessageWrap">
-<p>Tell us about any other time outside England, Scotland or Wales in the additional information section near the end of the claim.</p>
-<span>!</span>
 </div>
 
 </fieldset>
@@ -100,4 +94,18 @@
 </section>
 </div>
 </main>
-<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+
+// Show & Hide Fields
+
+$(document).ready(function() {  
+	$('#reason-for-being-there').change(function(){
+		if ($(this).val() == 'other') {
+			$(this).parents().next('.other-detail').show('medium');	
+		}
+	});
+});
+
+</script> 

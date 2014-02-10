@@ -22,7 +22,6 @@
 	<li>
 		<p>Have you claimed or received any other benefits since your claim date?</p>
 		<!-- "Have you or your Partner/Spouse claimed or received any other benefits since your claim date: 03/03/2010?" -->
-
 		<ul class="radio" id="806299bb55c1f3cc8239d602f5ce9b6254cb70275e80eea68135caeb29f5ab0c">
 	        <li>
 	            <input type="radio" id="806299bb55c1f3cc8239d602f5ce9b62c2e8d86ef033813ba15973903a938556" name="0d4570dd2de4b5f61fda31fd2430802654cb70275e80eea68135caeb29f5ab0c">
@@ -34,23 +33,22 @@
 	        </li>
 		</ul>
 	</li>
-
 	<li>
 		<p>Have you received payments for the person you care for or any other person since your claim date?</p>
 		<p class="helper">For example, from a local authority, fostering, direct payments, or adult placements</p>
-		<ul class="radio" id="2f6c8ce7db2a3b70f41b1793d3d40c230ba06c539c6c02f22bdaf591c0e8429a52857dc244a0fbf78a670ef4d69ff177">
+		<ul class="radio" id="other-payments">
 	        <li>
-	            <input type="radio" id="additional-yes" name="2f6c8ce7db2a3b70f41b1793d3d40c2307a4ee33b41e858a9dc3fed8c03c6ecc52857dc244a0fbf78a670ef4d69ff177" helperbelow="Enter all payments from organisations or individuals, eg from a local authority, payments for fostering, direct payments, adult placements.">
-	            <label for="additional-yes">Yes</label>
+	            <input type="radio" id="other-payments-yes" name="other-pay">
+	            <label for="other-payments-yes">Yes</label>
 	        </li>
 	        <li>
-	            <input type="radio" id="additional-no" name="2f6c8ce7db2a3b70f41b1793d3d40c2307a4ee33b41e858a9dc3fed8c03c6ecc52857dc244a0fbf78a670ef4d69ff177"  helperbelow="Enter all payments from organisations or individuals, eg from a local authority, payments for fostering, direct payments, adult placements.">
-	            <label for="additional-no">No</label>
+	            <input type="radio" id="other-payments-no" name="other-pay"  >
+	            <label for="other-payments-no">No</label>
 	        </li>
 		</ul>
 	</li>
 
-    <li id="otherPayWrap" class="other-detail grouped" style="display:none;" >
+    <li class="other-detail grouped" style="display:none;" >
         <ul>
 			<li>
 				<label for="6a95970fdb90faec2baa4cfa03c1c6f6">Who pays you?</label>
@@ -62,7 +60,7 @@
 			</li>
 			<li>
 				<label for="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835">How often? <em>(optional)</em></label>
-    			<select id="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835" name="fcadd9ffc1c3b935ea9ea939768ef4301ee8c1aee318bc06fadfea2d6caba835" visibleon="yes" display="no" selectwithother="true">
+    			<select id="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835" name="fcadd9ffc1c3b935ea9ea939768ef4301ee8c1aee318bc06fadfea2d6caba835">
         
             		<option value="">Please select</option>
             		<option value="weekly">Weekly</option>
@@ -75,12 +73,10 @@
     		<!--<li id="howOften_wrap" class="other-detail" style="display: none;">
 				<label for="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25">How often? <em>(optional)</em></label>
     			<textarea id="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25" name="fcadd9ffc1c3b935ea9ea939768ef430a50cab97c39b867fda7a4112bfc7f6f5" visibleon="yes" placeholder="If other please specify..." autocomplete="off" maxlength="60" display="no"></textarea>
-
 				<p class="helper right">60 characters left</p>
     		</li>-->
 		</ul>
     </li>
-
 </ul>
 </fieldset>
         
@@ -91,22 +87,22 @@
 <ul>
 	<li>
 		<p>Have you received any Statutory Sick Pay (SSP) since your claim date?</p>
-		<ul class="radio" id="99da658c654be3298bef15b1b6950aa9030869375cca86a6bb1466863e102a25">
+		<ul class="radio" id="sick-pay">
 		     <li>
-		         <input type="radio" id="99da658c654be3298bef15b1b6950aa9b102b3996bdf8b28f7cee78dc99627de318d9de4e8009452a6e04d3d57fcfd4d" name="99da658c654be3298bef15b1b6950aa9030869375cca86a6bb1466863e102a25"  value="yes">
-		         <label for="99da658c654be3298bef15b1b6950aa9b102b3996bdf8b28f7cee78dc99627de318d9de4e8009452a6e04d3d57fcfd4d">Yes</label>
+		         <input type="radio" id="sick-pay-yes" name="sick-pay" value="yes">
+		         <label for="sick-pay-yes">Yes</label>
 		     </li>
 		     <li>
-		         <input type="radio" id="99da658c654be3298bef15b1b6950aa9eee15a04eee1f5f21eb6e7746ce942a252857dc244a0fbf78a670ef4d69ff177" name="99da658c654be3298bef15b1b6950aa9030869375cca86a6bb1466863e102a25"  value="no">
-		         <label for="99da658c654be3298bef15b1b6950aa9eee15a04eee1f5f21eb6e7746ce942a252857dc244a0fbf78a670ef4d69ff177">No</label>
+		         <input type="radio" id="sick-pay-no" name="sick-pay" value="no">
+		         <label for="sick-pay-no">No</label>
 		     </li>
 		</ul>
 	</li>
-	<li id="sickPayWrap" class="other-detail grouped" style="display: none;">
+	<li class="other-detail grouped" style="display: none;">
 	<ul>          
         <li class="currency"> 
             <label for="44334dfd18f1835122515c200ddd4486">How much?</label>
-         	<input type="tel" id="44334dfd18f1835122515c200ddd4486" name="44334dfd18f1835122515c200ddd4486" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" title="The amount must be in the format 12 or 12.5 or 12.55" value="" placeholder="£" maxlength="60" autocomplete="off">
+         	<input type="tel" id="44334dfd18f1835122515c200ddd4486" name="44334dfd18f1835122515c200ddd4486" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" title="The amount must be in the format 12 or 12.5 or 12.55" maxlength="60" autocomplete="off">
          </li>
          <li>
          	<label for="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835">How often? <em>(optional)</em></label>  
@@ -119,67 +115,60 @@
                  <option value="other">Other</option>
              </select>
          </li>
-             <li id="howOften_wrap" class="other-detail" style="display: none;">
-         
-         <label for="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25">How often? <em>(optional)</em> 
-         </label>
-            <textarea id="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25" name="fcadd9ffc1c3b935ea9ea939768ef430a50cab97c39b867fda7a4112bfc7f6f5" visibleon="yes" placeholder="If other please specify..." autocomplete="off" maxlength="60" display="no"></textarea>       
+         <!--<li id="howOften_wrap" class="other-detail" style="display: none;">
+	         <label for="how-often-other">How often? <em>(optional)</em></label>
+            <textarea id="how-often-other" name="how-often-other" placeholder="Please specify..." autocomplete="off" maxlength="60"></textarea>       
          	<p class="helper right">60 characters left</p>              
-         </li>         
+         </li>-->       
          <li>
-         	<label for="95d4d7f44b7007694d7a3ca74c7a5de3">Employer's name</label>
-         	<input type="text" id="95d4d7f44b7007694d7a3ca74c7a5de3" name="95d4d7f44b7007694d7a3ca74c7a5de3" value="" maxlength="60" autocomplete="off">
+         	<label for="employers-name">Employer's name</label>
+         	<input type="text" id="employers-name" name="employers-name" value="" maxlength="60" autocomplete="off">
          </li>
-         
          <li>
          	<p>Employer's address <em>(optional)</em></p>
-         <ul class="address-stack">
-             <li>         
-         		<label for="e0b51338407f15b5c0f9074d17c3ac77ff5e70b1a14de8c76bd48dd3c2726fd0">employersAddress_lineOne <em>(optional)</em></label>
-             	<input type="text" id="e0b51338407f15b5c0f9074d17c3ac77ff5e70b1a14de8c76bd48dd3c2726fd0" name="e0b51338407f15b5c0f9074d17c3ac777166a8c19d2f24809b11639810dce45c" value="" maxlength="35" autocomplete="off">
-             </li>
-             <li>         
-         		<label for="e0b51338407f15b5c0f9074d17c3ac774955c639c6a390ff993e1bf8dd65e5c5">employersAddress_lineTwo <em>(optional)</em></label>
-            	<input type="text" id="e0b51338407f15b5c0f9074d17c3ac774955c639c6a390ff993e1bf8dd65e5c5" name="e0b51338407f15b5c0f9074d17c3ac779a61009f69f71bee0adb90dc3d04c951" value="" maxlength="35" autocomplete="off">
-            </li>
-            <li>
-         		<label for="e0b51338407f15b5c0f9074d17c3ac7768c046938c719e3e747a2bde10a7099d">employersAddress_lineThree <em>(optional)</em></label>
-	            <input type="text" id="e0b51338407f15b5c0f9074d17c3ac7768c046938c719e3e747a2bde10a7099d" name="e0b51338407f15b5c0f9074d17c3ac771910589d89a603bc35aa4e68d8636294" value="" maxlength="35" autocomplete="off">
-            </li>
-         </ul>
-         
+	        <ul class="address-stack">
+				<li>         
+					<label for="employers-address-line1">employersAddress_lineOne <em>(optional)</em></label>
+					<input type="text" id="employers-address-line1" name="employers-address-line1" maxlength="35" autocomplete="off">
+				</li>
+				<li>         
+					<label for="employers-address-line2">employersAddress_lineTwo <em>(optional)</em></label>
+					<input type="text" id="employers-address-line2" name="employers-address-line2" maxlength="35" autocomplete="off">
+				</li>
+				<li>
+					<label for="employers-address-line3">employersAddress_lineThree <em>(optional)</em></label>
+					<input type="text" id="employers-address-line3" name="employers-address-line3" maxlength="35" autocomplete="off">
+				</li>
+	         </ul>
          </li>          
- 
          <li>
-         	<label for="dd60d5473409b602dbbf241963c2d6ab152003eff18b810c3ce8c763734d9e7f">Employer's postcode <em>(optional)</em></label>
-             <input type="text" id="dd60d5473409b602dbbf241963c2d6ab152003eff18b810c3ce8c763734d9e7f" name="dd60d5473409b602dbbf241963c2d6ab152003eff18b810c3ce8c763734d9e7f" value="" class="postcode" autocomplete="off" maxlength="60">
-         </li>
-         
-         </ul>
-         </li>
-
+         	<label for="employers-postcode">Employer's postcode <em>(optional)</em></label>
+             <input type="text" id="employers-postcode" name="employers-postcode" class="postcode" autocomplete="off" maxlength="60">
+         </li>  
+		</ul>
+		</li>
  		<li>
-	 		<p>Have you recieved any Statutory Maternity Pay (SMP), Statutory Paternity Pay (SPP) or Statutory Adoption Pay (SAP) since your claim date?</p>
-	 			<ul class="radio" id="f1571bd8801784b37d932d6268b0d17a">
+	 		<p>Have you received any Statutory Maternity Pay (SMP), Statutory Paternity Pay (SPP) or Statutory Adoption Pay (SAP) since your claim date?</p>
+	 			<ul class="radio" id="other-pay">
 	            	<li>
-	                	<input type="radio" id="385b0dc5899819dbd8a45a0ed8826946" name="f1571bd8801784b37d932d6268b0d17a"  value="yes">
-	                	<label for="385b0dc5899819dbd8a45a0ed8826946">Yes</label>
+	                	<input type="radio" id="other-pay-yes" name="other-pay" value="yes">
+	                	<label for="other-pay-yes">Yes</label>
 	            	</li>
 					<li>
-	                	<input type="radio" id="f99faab322c132667e97db56dc8d32d8" name="f1571bd8801784b37d932d6268b0d17a"  value="no">
-						<label for="f99faab322c132667e97db56dc8d32d8">No</label>
+	                	<input type="radio" id="other-pay-no" name="other-pay" value="no">
+						<label for="other-pay-no">No</label>
 	                </li>                		 	
 	            </ul>
 		</li>       
-		<li id="otherPayWrap" class="other-detail grouped" style="display: none;">
+		<li class="other-detail grouped" style="display: none;">
         	<ul>
 				<li class="currency"> 
 					<label for="44334dfd18f1835122515c200ddd4486">How much?</label>
-                    <input type="tel" id="44334dfd18f1835122515c200ddd4486" name="44334dfd18f1835122515c200ddd4486" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" title="The amount must be in the format 12 or 12.5 or 12.55" value="" placeholder="£" maxlength="60" autocomplete="off">
+                    <input type="tel" id="44334dfd18f1835122515c200ddd4486" name="44334dfd18f1835122515c200ddd4486" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" title="The amount must be in the format 12 or 12.5 or 12.55" maxlength="60" autocomplete="off">
                  </li>
                  <li>
 					<label for="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835">How often? <em>(optional)</em></label>
-                    <select id="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835" name="fcadd9ffc1c3b935ea9ea939768ef4301ee8c1aee318bc06fadfea2d6caba835" visibleon="yes" display="no" selectwithother="true">
+                    <select id="53edd5444d0ecca690d0202bc695aa4d1ee8c1aee318bc06fadfea2d6caba835" name="fcadd9ffc1c3b935ea9ea939768ef4301ee8c1aee318bc06fadfea2d6caba835">
 						<option value="">Please select</option>
 						<option value="weekly">Weekly</option>
 						<option value="fortnightly">Fortnightly</option>
@@ -188,8 +177,7 @@
 						<option value="other">Other</option>   
                     </select>
                  </li>
-                 
-                 <li id="howOften_wrap" class="other-detail" style="display: none;">
+                 <li id="howOften_wrap" class="other-detail grouped" style="display: none;">
                  	<label for="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25">How often? <em>(optional)</em></label>
                     <textarea id="53edd5444d0ecca690d0202bc695aa4d5ec223967359822ba20763b293878e25" name="fcadd9ffc1c3b935ea9ea939768ef430a50cab97c39b867fda7a4112bfc7f6f5" visibleon="yes" placeholder="If other please specify..." autocomplete="off" maxlength="60" display="no"></textarea>
                     <p class="helper right">60 characters left</p>
@@ -224,13 +212,46 @@
 </fieldset>
 
 <nav class="form-steps">
-    <a id="backButton" href="/7Employment/employment7.html" class="button secondary" aria-label="Back button">Back</a>
+    <a id="backButton" href="/7Employment/employment-guard.html" class="button secondary" aria-label="Back button">Back</a>
     <a href="/9pay-details/pay-details1.html" class="button">Next</a>
 </nav>
-    
-</form>
         
 </section>
 </div>
 </main>
 <!--#include virtual="../public/_includes/_global/footer.shtml" --> 
+
+<script>
+
+// Show & Hide Fields
+
+$(document).ready(function() {  
+	//$('#how-often-pay-child-care').change(function(){
+		//if ($(this).val() == 'other') {
+			//$(this).parents().next('.other-detail').show('medium');	
+		//}
+	//});
+});
+
+$('#other-payments-yes').click(function(){
+	$(this).parents('ul li').next('.other-detail').show('medium');
+});
+$('other-payments-no').click(function(){
+	$(this).parents('ul li').next('.other-detail').hide('medium');
+});
+
+$('#other-pay-yes').click(function(){
+	$(this).parents('ul li').next('.other-detail').show('medium');
+});
+$('#other-pay-no').click(function(){
+	$(this).parents('ul li').next('.other-detail').hide('medium');
+});
+
+$('#sick-pay-yes').click(function(){
+	$(this).parents('ul li').next('.other-detail').show('medium');
+});
+$('#sick-pay-no').click(function(){
+	$(this).parents('ul li').next('.other-detail').hide('medium');
+});
+
+</script>
