@@ -1,0 +1,79 @@
+<!--#set var="title" value="(About)" -->
+<!--#include virtual="../public/_includes/_global/header.shtml" -->  
+<main role="main" id="main">
+	<div class="carers-allowance">
+		<div class="progress-steps">
+		    <!--#include virtual="../public/_includes/_global/telephone.shtml" -->
+		    <!--#include virtual="../public/_includes/Progress-bar/about-you.shtml" -->
+		</div>
+		<section>
+	        <h1>About you - the Carer</h1>
+	        
+	        <div class="completed">
+	        	<ul aria-label="Completed questions">
+	            	<li><h3>Your details</h3><a href="/2About/about1.html">Change these answers</a></li>      
+	            	<li><h3>Your contact details</h3><a href="/2About/about2.html">Change these answers</a></li> 
+	            	<li><h3>Your claim date: <!--#include virtual="../public/_includes/ui/claim-date.shtml" --></h3> <a href="/2About/about3.html">Change this answer</a></li>
+	            	<li><h3>Your nationality and residency</h3> <a href="/2About/about4.html">Change these answers</a></li>
+	            	<li><h3>Time outside of England, Scotland or Wales</h3> <a href="/2About/about5.html">Change these answers</a></li> 
+	            	<li><h3>Other European Economic Area (EEA) states or Switzerland</h3> <a href="/2About/about6.html">Change these answers</a></li> 
+	           	</ul>
+	         </div>
+	         
+	   
+	        
+		<fieldset class="form-elements">
+			<legend>More about you</legend>
+
+			<ul>
+				<li>
+					<label for="7ea74a5ae3abf0d9d933b3c38fd38c1f">What is your marital status?</label>	
+				    <select name="7ea74a5ae3abf0d9d933b3c38fd38c1f" id="7ea74a5ae3abf0d9d933b3c38fd38c1f">
+			            <option selected value="">Please select</option>
+			            <option value="m">Married or civil partner</option>
+			            <option value="s">Single</option>
+			            <option value="d">Divorced or civil partnership dissolved</option>
+			            <option value="w">Widowed or surviving civil partner</option>
+			            <option value="n">Separated</option>
+			            <option value="p">Living with partner</option>
+				    </select>
+				</li>
+				<li>
+					<p>Have you had a partner/spouse living with you since your claim date?</p>
+
+					<ul class="radio" id="spouse_living_with_you_since_your_claim_date">
+						<li><input id="spouse_yes" name="spouse_living_with_you_since_your_claim_date" type="radio" value="yes"> <label for="spouse_yes">Yes</label></li>
+						<li><input id="spouse_no" name="spouse_living_with_you_since_your_claim_date" type="radio" value="no"> <label for="spouse_no">No</label></li>
+					</ul>
+					<p class="helper">If you have separated since the date you want to claim please select 'Yes'</p>
+				</li>
+
+				<li>
+					<p>Have you been on a course of education since your claim date?</p>
+
+					<ul class="radio" id="have_you_been_on_a_course_of_education">
+						<li><input id="education_yes" name="have_you_been_on_a_course_of_education" type="radio" value="yes"> <label for="education_yes">Yes</label></li>
+						<li><input id="education_no" name="have_you_been_on_a_course_of_education" type="radio" value="no"> <label for="education_no">No</label></li>
+					</ul>
+				</li>
+
+				<li>
+					<p>Do you get State Pension?</p>
+
+					<ul class="radio" id="do_you_get_state_pension">
+						<li><input id="pension_yes" name="do_you_get_state_pension" type="radio" value="yes"><label for="pension_yes">Yes</label></li>
+						<li><input id="pension_no" name="do_you_get_state_pension" type="radio" value="no"><label for="pension_no">No</label></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</fieldset><!-- / form elements -->
+				
+			<div class="form-steps">
+				<a href="about6.html" class="button secondary">Back</a>
+				<a href="/3Partner/partner1.html" class="button">Next</a>
+			</div><!-- / form steps -->
+	    </section>
+	</div>
+</main>
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->   
