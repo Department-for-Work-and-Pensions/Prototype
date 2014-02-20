@@ -1,0 +1,122 @@
+<!--#set var="title" value="(Employment)" -->
+<!--#include virtual="../public/_includes/_global/header.shtml" -->  
+<main role="main" id="main">
+	<div class="carers-allowance">
+		<div class="progress-steps">
+		    <!--#include virtual="../public/_includes/_global/telephone.shtml" -->
+		    <!--#include virtual="../public/_includes/Progress-bar/employment.shtml" -->
+		</div>
+		
+		<section>
+				
+		<h1>About your employment</h1>
+		
+		<div class="completed">
+		    <ul aria-label="Completed questions">     
+		        <li>
+		            <h3>Your job</h3>
+		            <a href="employment1.html">Change these answers</a>
+		        </li>    
+		        <!--<li>
+		            <h3>Employer's contact details</h3>
+		            <a href="employment2.html">Change these answers</a>
+		        </li>-->
+		    </ul>
+		</div>
+		
+		<fieldset class="form-elements">
+        
+        <legend>Your last wage</legend>
+
+		<ul>
+			<li>
+				<p>When were you last paid? <!--<em>(optional)--></em></p>
+				<!--#include virtual="../public/_includes/ui/date.shtml" -->
+				<p class="helper">e.g. 30 01 2014</p>
+			</li>
+			<li class="currency"> 
+				<label for="9789e2b31b57de8cf1640840d6a218d5">What was the gross pay for this period?</label>
+    			<input type="tel" autocomplete="off" maxlength="60" value="" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="9789e2b31b57de8cf1640840d6a218d5" id="9789e2b31b57de8cf1640840d6a218d5">
+			</li>
+			<li>
+				<label for="e7ec1d87a0e6033787a1597e568eadac">What was included in this pay? <em>(optional)</em></label>
+				<p class="helper">e.g. holiday pay, sick pay, or any redundancy payments</p>
+				<textarea maxlength="60" autocomplete="off" helperbelow="e.g holiday pay, sick pay" name="e7ec1d87a0e6033787a1597e568eadac" id="e7ec1d87a0e6033787a1597e568eadac"></textarea>
+				<!--<p class="helper right">60 characters left</p>-->
+			</li>
+    		<li>
+    			<label for="how-often-paid">How often are you paid?</label>
+        		<select selectwithother="true" name="how-often-paid" id="how-often-paid">  
+                	<option value="">Please select</option> 
+                	<option value="weekly">Weekly</option>  
+                	<option value="fortnightly">Fortnightly</option>   
+                	<option value="fourWeekly">Four-weekly</option>
+                	<option value="monthly">Monthly</option>
+                    <option value="other">Other</option>
+        		</select>
+        	</li>
+	    	<li style="display: none;" class="other-detail">
+				<!--<label for="how-often-paid-other">How often are you paid? <em>(optional)</em></label>-->
+	   			<textarea autocomplete="off" maxlength="60" placeholder="Please specify..." name="how-often-paid-other" id="how-often-paid-other"></textarea>
+	    		<!--<p class="helper right">60 characters left</p>-->        
+			</li>
+			<li>
+				<p>Do you usually get the same amount each time? <em>(optional)</em></p>
+				<ul id="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" class="radio">
+					<li>
+					    <input type="radio" value="yes"  name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">
+					    <label for="195e794e8cf852d4e6744b01a7b182d715823206cd78b8b2f2daebc27fad3cad">Yes</label>
+					</li>
+					
+					<li>
+					    <input type="radio" value="no"  name="195e794e8cf852d4e6744b01a7b182d7cb2b348be899b163064a7c7e19d8a50a" id="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">
+					    <label for="195e794e8cf852d4e6744b01a7b182d7ad275485ec9bc9b9292b8e5a6e967866">No</label>
+					</li>
+				</ul>
+			</li>
+		    <li>
+		    	<label for="when-get-paid">When do you get paid? <em>(optional)</em></label>
+		        <input type="text" maxlength="60" autocomplete="off" name="when-get-paid" id="when-get-paid">
+		        <p class="helper right">e.g. the last day of the month</p>
+	        </li>    
+	        <li>
+		        <p>Does your employer owe you any money?</p>
+		        <ul id="owed-money" class="radio">
+		        	<li>
+		        	    <input type="radio" value="yes" name="owed-money" id="owed-money-yes">
+		        	    <label for="owed-money-yes">Yes</label>
+		        	</li>
+		        	<li>
+		        	    <input type="radio" value="no" name="owed-money" id="owed-money-no">
+		        	    <label for="owed-money-no">No</label>
+		        	</li>
+		        </ul> 
+	        </li>
+        </ul>
+        </fieldset><!-- / form elements -->			
+			
+		<div class="form-steps">
+			<a href="employment1.html" class="button secondary">Back</a>
+			<a href="employment4.html" class="button">Next</a>
+		</div><!-- / form steps -->
+		
+	    </section>
+	</div>
+</main>
+<!--#include virtual="../public/_includes/_global/footer.shtml" -->
+
+<script>
+
+// Show & Hide Fields
+
+// Show & Hide Fields
+
+$(document).ready(function() {  
+	$('#how-often-paid').change(function(){
+		if ($(this).val() == 'other') {
+			$(this).parents().next('.other-detail').show('medium');	
+		}
+	});
+});
+
+</script>
