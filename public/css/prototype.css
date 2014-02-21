@@ -1,0 +1,15 @@
+/* font fixes for employment text */
+
+.prompt.helper-prompt {
+    font-size: 160%;
+    line-height: 1.5;
+}
+
+/* overide broken smart answer styles */
+
+.carers-allowance .completed ul li {
+    background: url("../images/progress-tick.png") no-repeat scroll 1.8em 1.8em #D5E8F3 !important;
+    border-bottom: 1px solid #B6D6D2;
+    padding: 1.5em 11em 1.5em 4.5em;
+    position: relative;
+}
