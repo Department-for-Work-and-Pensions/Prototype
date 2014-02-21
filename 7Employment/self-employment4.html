@@ -33,15 +33,16 @@
 
          <ul>
 			<li>
-				<label for="c9eb7c3baa00cb5a54e51d6f1986486afe95b9819348048b42eb5f339a957a25">Name of the person/organisation who looks after your child/children</label>
-			 	<input type="text" maxlength="60" autocomplete="off" value="" name="c9eb7c3baa00cb5a54e51d6f1986486afe95b9819348048b42eb5f339a957a25" id="c9eb7c3baa00cb5a54e51d6f1986486afe95b9819348048b42eb5f339a957a25">
+				<label for="name">Name of the person/organisation who looks after your child/children</label>
+			 	<input type="text" maxlength="60" autocomplete="off" value="" name="name" id="name">
 			</li>
+			
  			<li class="currency"> 
-				<label for="93e24f1b3c2e203c035759cfc353b889">How much do you pay them?</label>
-				<input type="tel" autocomplete="off" maxlength="60" value="" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="93e24f1b3c2e203c035759cfc353b889" id="93e24f1b3c2e203c035759cfc353b889">
+				<label for="how-much-child-care">How much do you pay them?</label>
+				<input type="tel" autocomplete="off" maxlength="60" value="" title="how-much-child-care" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="how-much-child-care" id="how-much-child-care">
 			</li>
 			<li>
-				<label for="how-often-pay-child-care">How often do you pay childcare expenses?</label>
+				<label for="how-often-pay-child-care">How often do you pay them?</label>
     			<select name="how-often-pay-child-care" id="how-often-pay-child-care">
 		            <option value="">Please select</option>
 		            <option value="02">Weekly</option> 
@@ -52,27 +53,21 @@
     			</select>
     		</li>
     		<li style="display: none;" class="other-detail">
-				<!--<label for="how-often-pay-child-care-other">How often do you pay childcare expenses?</label>-->
     			<textarea autocomplete="off" maxlength="60" placeholder="Please specify..." name="how-often-pay-child-care-other" id="how-often-pay-child-care-other"></textarea>
-                <!--<p class="helper right">60 characters left</p>-->
     		</li>
 			<li>
-				<label for="f25ea61b082ad4a527737efb0d4e75772d42cdeb015f33a74a3df3d0bef5328b">What relation, if any, is the person/organisation to you?</label>
-    			 <!--#include virtual="../public/_includes/ui/relationship.shtml" -->
-			</li>
-    		<li style="display: none;" class="other-detail" id="no-id">
-       		<ul>
-				<li>
-					<label for="b86e14bf26f5fcba4480fcfa91918d30f83ca8450fe22c40ef88ca4c7f201401">What relation, if any, is the person/organisation to your Partner/Spouse?</label>
-		    		<!--#include virtual="../public/_includes/ui/relationship.shtml" -->
-		    	</li>
-		    </ul>
-		    </li>
-			<li>		
-				<label for="f25ea61b082ad4a527737efb0d4e7577fa7ee920bdcf99f0e824c52c9c51e0ec0c6edd8382c39439463aff65bd951c80">What relation, if any, is this person/organisation to the person you care for?</label>
-   				 <!--#include virtual="../public/_includes/ui/relationship.shtml" -->		
-   			</li>
-        </ul>
+				<label for="what-relation-you">What relation, if any, is this person/organisation to you?</label>
+				<input type="text" id="what-relation-you">
+			</li>	
+		<!--<li>
+				<label for="1dc1a9e7bc37f38c09bcd8645e55eab78f057e36db53cbb8c4cc2da2c0119bc1">What relation, if any, is the person/organisation to your Partner/Spouse?</label>
+			    <input type="text">
+			</li>-->
+			<li>
+				<label for="what-relation-person-care-for">What relation, if any, is this person/organisation to the person you care for?</label>
+			     <input type="text" id="what-relation-person-care-for">
+			</li>        
+			</ul>
     </fieldset>
 
 	<div class="form-steps">

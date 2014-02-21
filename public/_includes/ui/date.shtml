@@ -1,4 +1,32 @@
-<ul class="inline year" id="date">
+<style>
+
+.carers-allowance .form-elements ul.year li {
+	float: left; 
+	padding-top: 0;
+}
+.carers-allowance .form-elements ul.new-labels li p {
+	color: #6F777B;
+}
+.carers-allowance .form-elements ul.year.new-labels li input {}
+
+</style>
+
+<ul class="inline year new-labels" id="date" style="float:left; width: 100%;">
+	<li>
+		<p>Day</p>
+		<input autocomplete="off" maxlength="2" name="date-day" title="Day" type="tel">
+	</li>
+	<li>
+		<p>Month</p>
+		<input autocomplete="off" name="date-month" title="Month" type="tel">
+	</li>
+	<li>
+		<p>Year</p>
+		<input autocomplete="off" maxlength="4" name="date-year" pattern="[0-9 \-]{1,20}" title="Year" type="tel">
+	</li>
+</ul>
+
+<!--<ul class="inline year" id="date">
 	<li>
 		<input autocomplete="off" id="" maxlength="2" name="date-day" placeholder="DD" title="Day" type="tel">
 	</li>
@@ -8,7 +36,7 @@
 	<li>
 		<input autocomplete="off" id="" maxlength="4" name="date-year" pattern="[0-9 \-]{1,20}" placeholder="YYYY" title="Year" type="tel">
 	</li>
-</ul>
+</ul>-->
 
 <!--
 <ul id="date" class="inline year">

@@ -1,3 +1,5 @@
+<p class="helper">e.g. VO 12 34 56 D</p>
+
 <input type="text" name="nino" id="nino">
 
 <!--
@@ -25,7 +27,6 @@
 </ul>
 -->
 
-<p class="helper">e.g. VO 12 34 56 D</p>
 <p class="helper-more">Help</p>
 <div class="helper-info">
 	<p>This can be found on your National Insurance card, a benefit letter, payslip or a P60</p>

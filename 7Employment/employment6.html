@@ -15,7 +15,7 @@
 	        <ul aria-label="Completed questions">     
 		        <li>
 		            <h3>Your job</h3>
-		            <a href="/employment1.html">Change these answers</a>
+		            <a href="employment1.html">Change these answers</a>
 		        </li>
 		        <!--<li>
 		            <h3>Employer's contact details</h3>
@@ -23,15 +23,15 @@
 		        </li>-->
 		        <li>
 		            <h3>Your last wage</h3>
-		            <a href="/employment3.html">Change these answers</a>
+		            <a href="employment3.html">Change these answers</a>
 		        </li>
 		        <li>
 		            <h3>Pension schemes</h3>
-		            <a href="/employment4.html">Change these answers</a>
+		            <a href="employment4.html">Change these answers</a>
 		        </li>
 		        <li>
 		            <h3>About expenses to do with your employment</h3>
-		            <a href="/employment5.html">Change these answers</a>
+		            <a href="employment5.html">Change these answers</a>
 		        </li>
 	        </ul>
 		</div>	
@@ -40,15 +40,15 @@
 		<legend>Childcare expenses while you are at work</legend>
 		<ul>
 		<li>
-			<label for="e46c4002bdb06a8100ed20ab27fe44533a3106ab35cf0bbb31a292c107d0a3a9">Name of the person/organisation who looks after your child/children</label>
-		    <input type="text" maxlength="60" autocomplete="off" value="" name="e46c4002bdb06a8100ed20ab27fe44533a3106ab35cf0bbb31a292c107d0a3a9" id="e46c4002bdb06a8100ed20ab27fe44533a3106ab35cf0bbb31a292c107d0a3a9">
+			<label for="name">Name of the person/organisation who looks after your child/children</label>
+		    <input type="text" maxlength="60" autocomplete="off" value="" name="name" id="name">
 		</li>
 		<li class="currency"> 
-			<label for="1257dfa57e48d8785b039fade4f8804ad60028c2d73976c8228d464e77798714">How much do you pay them?</label>
-			<input type="tel" autocomplete="off" maxlength="60" value="" title="The amount must be in the format 12 or 12.5 or 12.55" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="1257dfa57e48d8785b039fade4f8804ad60028c2d73976c8228d464e77798714" id="1257dfa57e48d8785b039fade4f8804ad60028c2d73976c8228d464e77798714">
+			<label for="how-much-child-care">How much do you pay them?</label>
+			<input type="tel" autocomplete="off" maxlength="60" value="" title="how-much-child-care" pattern="^[0-9]{1,12}(\.[0-9]{1,2})?$" name="how-much-child-care" id="how-much-child-care">
 		</li>
 		<li>
-			<label for="how-often-pay-child-care">How often do you pay childcare expenses?</label>
+			<label for="how-often-pay-child-care">How often do you pay them?</label>
 		    <select selectwithother="true" name="how-often-pay-child-care" id="how-often-pay-child-care">
 		    	<option value="">Please select</option>
 				<option value="02">Weekly</option>
@@ -59,20 +59,19 @@
 		    </select>
 	    </li>
 	    <li style="display: none;" class="other-detail">
-			<!--<label for="how-often-pay-child-care-other">How often do you pay childcare expenses?</label>-->
-		    <textarea autocomplete="off" maxlength="60" placeholder="Please specify..." name="964f8155b682506ceeaad24e47efacff5084534b490c8989ab4dce0871afdce1ffced78c4315f079f385aea23951ff97" id="964f8155b682506ceeaad24e47efacfff6bb454f85c29d525eb26bc8a7f14d35ffced78c4315f079f385aea23951ff97"></textarea>	
-			<!--<p class="helper right">60 characters left</p>-->
+		    <textarea autocomplete="off" maxlength="60" placeholder="Please specify..." name="how-often-pay-child-care-other" id="how-often-pay-child-care-other"></textarea>	
 		</li>
 		<li>
-			<label for="f2ca4054d2f3ef555ab14dd4f577f1f2">What relation, if any, is the person/organisation to you?</label>
-			<!--#include virtual="../public/_includes/ui/relationship.shtml" -->		
-		<li>
+			<label for="what-relation-you">What relation, if any, is this person/organisation to you?</label>
+			<input type="text" id="what-relation-you">
+		</li>	
+	<!--<li>
 			<label for="1dc1a9e7bc37f38c09bcd8645e55eab78f057e36db53cbb8c4cc2da2c0119bc1">What relation, if any, is the person/organisation to your Partner/Spouse?</label>
-		    <!--#include virtual="../public/_includes/ui/relationship.shtml" -->		
-		</li>
+		    <input type="text">
+		</li>-->
 		<li>
-			<label for="c40724f335c804a6490299e854877dc278d760f8dd022a8d72afa67483273d36">What relation, if any, is this person/organisation to the person you care for?</label>
-		     <!--#include virtual="../public/_includes/ui/relationship.shtml" -->
+			<label for="what-relation-person-care-for">What relation, if any, is this person/organisation to the person you care for?</label>
+		     <input type="text" id="what-relation-person-care-for">
 		</li>
 		</ul>
 		</fieldset><!-- / form elements -->	

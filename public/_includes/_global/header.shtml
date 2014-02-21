@@ -67,6 +67,29 @@
 			    border: 1px solid #A2A2A2;
 			    transition: all 200ms ease-in 0s;
 			 }
+			 
+			 .carers-allowance .form-elements ul li .helper-more {
+			 	margin: 0.6em 0;
+			 }
+			 .carers-allowance .prompt.helper-prompt p,
+			 .carers-allowance .prompt.helper-prompt ul li {
+			 	font-size: 1.9rem;
+			 }
+			 .carers-allowance .form-elements ul li .helper-info ul {
+			     list-style: disc outside none;
+			     margin: .2em 0;
+			     padding-left: 1.4em;
+			 }
+			 .carers-allowance .form-elements ul li .helper-info li {
+			 	font-size: 1.6rem;	
+			 	display: list-item;
+			 	line-height: 1.3em;
+			 	padding: 0 0 0.3em;
+			 	margin: 0;
+			 }
+			 .carers-allowance .form-elements ul li .helper-info {
+			 	padding: 1em .7em .7em;
+			 }
         </style>
         
         <script src="../public/js/vendor/modernizr-2.6.2.min.js"></script>

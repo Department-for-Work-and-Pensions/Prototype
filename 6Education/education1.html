@@ -18,6 +18,7 @@
 <ul>
 	<li>
 		<p>Have you been on a course of education since your claim date?</p>
+		<p class="helper">This includes any full-time, part-time, or other courses (e.g. home study)</p>
 		<ul class="radio" id="have_you_been_on_a_course_of_education">
 			<li>
 				<input id="education_yes" name="have_you_been_on_a_course_of_education" type="radio" value="yes"> 
@@ -40,27 +41,30 @@
         <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
     </li>
     <li >
-        <label for="">Name of school, college or university</label>
+        <label for="">Where are you studying?</label>
+        <p class="helper">e.g. name of your school, college or university</p>
         <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
     </li>
 
             <li >
-                <label for="">Name of main teacher or tutor </label>
+                <label for="">Name of your main teacher or tutor </label>
                 <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
             </li>
             <li>
                 <label for="">Course contact number (optional)</label>
-                <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">
-                <p class="helper">Please include if you know the phone number for your department</p>
+                <p class="helper">e.g. the phone number for your department or tutor</p>
+                <input type="text" id="" name="" value="" maxLength="50" autocomplete="off">   
             </li>
 
             <li>
                 <p>When did you start the course?</p>
+                
                 <!--#include virtual="../public/_includes/ui/date.shtml" -->
-                <p class="helper">e.g. 01 09 2013</p>
+            	<p class="helper">e.g. 01 09 2013</p>
             </li>
             <li>
                 <p>When did the course end or when will you finish?</p>
+                
                 <!--#include virtual="../public/_includes/ui/date.shtml" -->
                 <p class="helper">e.g. 01 07 2014</p>
              </li>
