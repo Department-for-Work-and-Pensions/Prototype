@@ -22,25 +22,28 @@
 <!--<p class="helper" style="margin-bottom: 1em">Enter their name as shown on your birth certificate or passport</p>-->
 
 <ul>
-	<li>
+	<!--<li>
 		<label for="date">Title</label>
-		<!--#include virtual="../public/_includes/ui/title.shtml" -->
+		#include virtual="../public/_includes/ui/title.shtml"
+	</li>-->
+	<li>
+		<label for="fullname">Full name</label>
+		<input type="text"
 	</li>
-	<!--#include virtual="../public/_includes/ui/name.shtml" -->	
 	<li>
 		<p>National Insurance number <em>(optional)</em></p>
 		<!--#include virtual="../public/_includes/ui/nino.shtml" -->
+	</li>
+	<li>
+		<label for="nationality">Nationality</label>
+		<p style="color: #6f777b; margin: 0 0 10px 0; font-size: 19px;">If they have a current passport, please give their nationality as shown on their passport</p>
+		<!--#include virtual="../public/_includes/ui/nationality.shtml" -->
 	</li>
 	<li>
 		<p>Date of birth</p>
 		<p class="helper">e.g. 03 05 1979</p>
 		<!--#include virtual="../public/_includes/ui/date.shtml" -->
 		<p>&nbsp;</p>
-	</li>
-	<li>
-		<label for="nationality">Nationality <em>(optional)</em></label>
-		<p style="color: #6f777b; margin: 0 0 10px 0; font-size: 19px;">If they have a current passport, please give their nationality as shown on their passport</p>
-		<!--#include virtual="../public/_includes/ui/nationality.shtml" -->
 	</li>
 	<li>
 		<p>Have you separated from your partner/spouse since your claim date?</p>
@@ -56,7 +59,7 @@
 		</ul>
 	</li>
 	<li>
-		<p>Is your partner/spouse the person you are claiming Carer's Allowance for?</p>
+		<p>Is this the person you are claiming Carer's Allowance for?</p>
 		<ul id="e650dd875d8c881caeb4cb23d95c20f43454c005f10872aad4b88f3523e1f97e" class="radio">
 			<li>
 			<input type="radio" value="yes" name="e650dd875d8c881caeb4cb23d95c20f43454c005f10872aad4b88f3523e1f97e" id="e650dd875d8c881caeb4cb23d95c20f40dcb329f994c6ab3d201b37233d460c9">
